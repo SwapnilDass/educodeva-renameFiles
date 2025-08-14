@@ -3,6 +3,9 @@ import Logo from "./logo";
 import Greeting from "./greeting";
 import EmailField from "./EmailField";
 import PassField from "./PassField";
+import LoginButton from "./loginButton";
+import SignUp from "./signUp";
+import OrDivider from "./OrDivider";
 
 const Login: React.FC = () => {
   return (
@@ -18,6 +21,13 @@ const Login: React.FC = () => {
         {/* Login content goes here */}
         <EmailField />
         <PassField />
+        <LoginButton />
+
+        {/*Sign up */}
+        <SignUp />
+
+        {/*Divider */}
+        <OrDivider />
       </div>
     </div>
   );
