@@ -1,0 +1,24 @@
+/* Container */
+.email-field {
+  @apply mx-auto mt-6 flex w-full max-w-[520px] flex-col;
+}
+
+/* Label */
+.email-label {
+  @apply mb-2 text-sm font-medium text-white/90;
+}
+
+/* Input wrapper */
+.email-input-wrapper {
+  @apply relative flex h-12 w-full items-center gap-3 rounded-xl border border-white/20 bg-white/10 px-4 transition-all focus-within:ring-2 focus-within:ring-purple-400/60 hover:border-white/40;
+}
+
+/* Icon inside the wrapper */
+.email-input-wrapper svg {
+  @apply h-5 w-5 shrink-0 text-white/60;
+}
+
+/* Actual input */
+.email-input {
+  @apply h-full flex-1 border-0 bg-transparent text-white placeholder-white/50 outline-none;
+}

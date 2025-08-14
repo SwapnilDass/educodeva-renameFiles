@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "./logo";
 import Greeting from "./greeting";
+import EmailField from "./EmailField";
 
 const Login: React.FC = () => {
   return (
@@ -26,6 +27,8 @@ const Login: React.FC = () => {
         <Greeting />
         
         {/* Login content goes here */}
+        <EmailField/>
+        
       </div>
     </div>
   );
