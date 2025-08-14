@@ -5,6 +5,7 @@ import Greeting from "./greeting";
 const Login: React.FC = () => {
   return (
     <div className="flex items-center justify-center h-screen bg-[#050222]">
+      {/*Gray Layout*/}
       <div
         className="
           rounded-[25px] 
