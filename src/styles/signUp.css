@@ -1,0 +1,40 @@
+.signup-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.25rem; /* Tailwind mt-1 equivalent */
+  gap: 0.5rem; /* Tailwind gap-x-2 equivalent */
+}
+
+.signup-left-text {
+  color: rgba(224, 224, 224, 0.74);
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+}
+
+.signup-right-button {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 70px; /* reduced from 124px to fit closer spacing */
+  background: linear-gradient(114deg, #9A58FF 20.91%, #ED066B 45.36%, #ED066B 58.45%, #9A58FF 79.06%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  border: none;
+  cursor: pointer;
+  font-feature-settings: 'ss02' on;
+}
+
+.signup-right-button:focus {
+  outline: none;
+}
+
+.signup-right-button:active {
+  transform: scale(0.95); /* subtle click effect */
+}
