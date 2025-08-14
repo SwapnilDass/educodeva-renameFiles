@@ -1,0 +1,6 @@
+.logo-svg {
+  width: 100%;
+  max-width: 300px; /* same as Tailwind max-w-[300px] */
+  margin-bottom: 1.5rem; /* mb-6 equivalent */
+  display: block;
+}
