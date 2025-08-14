@@ -2,37 +2,25 @@ import React from "react";
 import Logo from "./logo";
 import Greeting from "./greeting";
 import EmailField from "./EmailField";
+import PassField from "./PassField";
 
 const Login: React.FC = () => {
   return (
-    <div className="flex items-center justify-center h-screen bg-[#050222]">
+    <div className="flex h-screen items-center justify-center bg-[#050222]">
       {/*Gray Layout*/}
-      <div
-        className="
-          rounded-[25px] 
-          border-[3px] border-white/30 
-          bg-white/10 
-          backdrop-blur-[125px] 
-          p-10
-          w-[50%] 
-          max-w-full
-          h-[650px]
-          flex flex-col items-center
-        "
-      >
+      <div className="flex h-[650px] w-[50%] max-w-full flex-col items-center rounded-[25px] border-[3px] border-white/30 bg-white/10 p-10 backdrop-blur-[125px]">
         {/* Logo at the top */}
         <Logo />
 
         {/* Greeting text */}
         <Greeting />
-        
+
         {/* Login content goes here */}
-        <EmailField/>
-        
+        <EmailField />
+        <PassField />
       </div>
     </div>
   );
 };
 
 export default Login;
-
