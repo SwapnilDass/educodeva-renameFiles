@@ -2,7 +2,7 @@ import TestimonialGrid from "./TestimonialGrid";
 
 export default function TestimonialSection() {
   return (
-    <section className="flex h-screen flex-col items-center justify-center bg-[#050222]">
+    <section className="flex flex-col items-center justify-center bg-[#050222]">
       {/* Content container */}
       <div className="h-[85%] w-[80%]">
         {/* Header */}
