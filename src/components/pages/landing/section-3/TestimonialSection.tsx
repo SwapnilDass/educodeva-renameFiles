@@ -7,7 +7,8 @@ export default function TestimonialSection() {
       <div className="h-[85%] w-[80%]">
         {/* Header */}
         <div className="mb-16 flex h-fit gap-10">
-          <div className="h-16 w-16 flex-shrink-0 rounded-[10px] bg-[#ED066B] p-[18px]">
+          {/* Icon */}
+          <div className="ml-2 h-16 w-16 flex-shrink-0 rounded-[10px] bg-[#ED066B] p-[18px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="149"
@@ -23,8 +24,9 @@ export default function TestimonialSection() {
             </svg>
           </div>
 
+          {/* Title and description */}
           <div className="flex h-full flex-col justify-between">
-            <h2 className="font-[Inter] text-[1.625rem] font-medium">
+            <h2 className="text-[1.625rem] font-medium">
               Bringing students together,{" "}
               <span
                 style={{
@@ -46,6 +48,7 @@ export default function TestimonialSection() {
           </div>
         </div>
 
+        {/* User testimonials */}
         <TestimonialGrid />
       </div>
     </section>
