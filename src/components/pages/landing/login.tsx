@@ -7,6 +7,7 @@ import LoginButton from "./loginButton";
 import SignUp from "./signUp";
 import OrDivider from "./OrDivider";
 import SocialButtons from "./SocialButtons";
+import Footer from "./footer";
 
 const Login: React.FC = () => {
   return (
@@ -32,6 +33,9 @@ const Login: React.FC = () => {
 
         {/*Social Buttons */}
         <SocialButtons />
+
+        {/*Footer */}
+        <Footer />
       </div>
     </div>
   );

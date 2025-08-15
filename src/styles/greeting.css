@@ -1,33 +1,15 @@
 .greeting-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  max-width: 90%;
+  @apply flex max-w-[90%] flex-col items-center text-center;
 }
 
 .greeting-main {
-  color: #ffffff;
-  font-family: 'Inter', sans-serif;
-  font-weight: 800; /* font-extrabold */
-  font-size: 25px;
-  line-height: normal;
-  margin-top: 1.5rem; /* mt-6 equivalent */
-  text-align: center;
+  @apply mb-2 font-sans text-[22px] font-extrabold leading-[28px] text-white;
 }
 
 .greeting-sub {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem; /* gap-1 equivalent */
-  margin-top: 1rem; /* mt-4 equivalent */
+  @apply flex flex-col items-center gap-0;
 }
 
 .greeting-sub p {
-  color: rgba(255, 255, 255, 0.8); /* text-white/80 */
-  font-family: 'Inter', sans-serif;
-  font-weight: 400; /* font-normal */
-  font-size: 24px;
-  line-height: 1.5rem; /* approximate leading-relaxed */
-  margin: 0;
+  @apply font-sans text-[16px] font-normal leading-[22px] text-white/80;
 }

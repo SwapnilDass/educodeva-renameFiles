@@ -1,0 +1,15 @@
+.footer-container {
+  @apply mt-8 text-center text-sm text-white;
+}
+
+.footer-text {
+  @apply mb-2;
+}
+
+.footer-links {
+  @apply flex justify-center gap-8;
+}
+
+.footer-link {
+  @apply relative;
+}

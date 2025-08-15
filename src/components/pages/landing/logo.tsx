@@ -1,6 +1,7 @@
 // src/components/Logo.tsx
-//Codeva Brand Logo 
+//Codeva Brand Logo
 import React from "react";
+import "../../../styles/logo.css";
 
 const Logo: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ const Logo: React.FC = () => {
       height="40"
       viewBox="0 0 376 162"
       fill="none"
-      className="w-full max-w-[300px] mb-6"
+      className="mb-6 w-full max-w-[300px]"
     >
       <path
         d="M0.0994393 2.18128C-0.225504 1.24104 0.879884 0.450074 1.67345 1.04998C17.9422 13.3486 32.5928 20.9795 56.4729 21.7295H317.947C324.373 21.7295 330.085 25.8224 332.151 31.907L375.831 160.558C376.158 161.52 374.996 162.3 374.216 161.648C352.649 143.626 339.407 137.53 313.238 137.156H57.1243C50.7017 137.156 44.9918 133.068 42.9234 126.987L23.6259 70.2561L0.0994393 2.18128Z"

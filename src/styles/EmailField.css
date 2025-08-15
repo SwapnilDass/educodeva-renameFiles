@@ -22,3 +22,16 @@
 .email-input {
   @apply h-full flex-1 border-0 bg-transparent text-white placeholder-white/50 outline-none;
 }
+
+/* Prevent autofill from changing background color */
+.email-input:-webkit-autofill,
+.email-input:-webkit-autofill:hover,
+.email-input:-webkit-autofill:focus,
+.email-input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+  box-shadow: 0 0 0px 1000px transparent inset !important;
+  background-color: transparent !important;
+  -webkit-text-fill-color: white !important;
+  transition: background-color 5000s ease-in-out 0s !important;
+  caret-color: white;
+}
