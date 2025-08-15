@@ -1,6 +1,6 @@
 import "../../styles/index.css";
 import Hero from "./landing/hero";
-import Events from "./landing/Events";
+import Events from "./landing/section-2/Events";
 
 export default function Landing() {
   return (
