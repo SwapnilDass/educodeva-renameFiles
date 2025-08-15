@@ -1,25 +1,19 @@
 import React from "react";
+import "../../../styles/loginButton.css"; // updated path for your folder structure
 
 const LoginButton: React.FC = () => {
   return (
     <button
-      className="
-        w-full max-w-[520px]
-        rounded-[10px]
-        h-[47px]
-        bg-white
-        text-black
-        font-inter
-        text-[14px]
-        font-bold
-        leading-none
-        py-3 px-4
-        mt-5
-      "
+      className="login-button"
+      onClick={() => {
+        console.log("Login clicked!");
+        // Add your login logic here
+      }}
     >
-      Log In
+      Login
     </button>
   );
 };
 
 export default LoginButton;
+
