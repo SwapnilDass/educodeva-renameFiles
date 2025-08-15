@@ -1,20 +1,22 @@
 import React from "react";
-import "../../../styles/logo.css"; // updated path for your folder structure
+import "../../../styles/greeting.css"; // updated path for your folder structure
 
-const Logo: React.FC = () => {
+const Greeting: React.FC = () => {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 376 162"
-      fill="none"
-      className="logo-svg"
-    >
-      <path
-        d="M0.0994393 2.18128C-0.225504 1.24104 0.879884 0.450074 1.67345 1.04998C17.9422 13.3486 32.5928 20.9795 56.4729 21.7295H317.947C324.373 21.7295 330.085 25.8224 332.151 31.907L375.831 160.558C376.158 161.52 374.996 162.3 374.216 161.648C352.649 143.626 339.407 137.53 313.238 137.156H57.1243C50.7017 137.156 44.9918 133.068 42.9234 126.987L23.6259 70.2561L0.0994393 2.18128Z"
-        fill="white"
-      />
-    </svg>
+    <div className="greeting-container">
+      {/* Main greeting */}
+      <h1 className="greeting-main">
+        Hey! Glad to see you again.
+      </h1>
+
+      {/* Sub greeting split into two lines */}
+      <div className="greeting-sub">
+        <p>👋 Welcome back! Log In or Sign Up to</p>
+        <p>your account below.</p>
+      </div>
+    </div>
   );
 };
 
-export default Logo;
+export default Greeting;
+
