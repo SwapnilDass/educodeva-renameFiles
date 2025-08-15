@@ -8,12 +8,15 @@ import SignUp from "./signUp";
 import OrDivider from "./OrDivider";
 import SocialButtons from "./SocialButtons";
 import Footer from "./footer";
+import "../../../styles/Login-styles/login.css";
+
+import "../../../styles/Login-styles/login.css"; // Import CSS file
 
 const Login: React.FC = () => {
   return (
-    <div className="flex h-screen items-center justify-center bg-[#050222]">
+    <div className="login-page">
       {/*Gray Layout*/}
-      <div className="flex h-[750px] w-[50%] max-w-full flex-col items-center rounded-[25px] border-[3px] border-white/30 bg-white/10 p-6 backdrop-blur-[125px]">
+      <div className="login-container">
         {/* Logo at the top */}
         <Logo />
 

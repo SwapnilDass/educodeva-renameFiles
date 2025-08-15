@@ -1,0 +1,29 @@
+.or-divider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 0.5rem !important; /* force less space above */
+  margin-bottom: 0.75rem !important; /* add space below */
+
+  width: 100%;
+  max-width: 460px; /* same width as buttons */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.or-line {
+  flex: 1;
+  height: 1px;
+  background-color: #6b7280; /* Tailwind gray-500 look */
+}
+
+.or-text {
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0 0.5rem;
+  text-align: center;
+}

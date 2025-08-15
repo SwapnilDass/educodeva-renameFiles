@@ -1,7 +1,7 @@
 // src/components/Logo.tsx
 //Codeva Brand Logo
 import React from "react";
-import "../../../styles/logo.css";
+import "../../../styles/Login-styles/logo.css";
 
 const Logo: React.FC = () => {
   return (

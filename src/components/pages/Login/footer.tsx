@@ -1,5 +1,5 @@
 import React from "react";
-import "../../../styles/footer.css"; // Adjust the path based on your folder structure
+import "../../../styles/Login-styles/footer.css"; // Adjust the path based on your folder structure
 
 const Footer: React.FC = () => {
   return (

@@ -1,6 +1,6 @@
 /* Container */
 .pass-field {
-  @apply mx-auto mt-6 flex w-full max-w-[520px] flex-col;
+  @apply mx-auto mt-6 flex w-full max-w-[460px] flex-col;
 }
 
 /* Label */

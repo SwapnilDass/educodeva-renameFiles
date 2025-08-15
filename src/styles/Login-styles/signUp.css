@@ -9,7 +9,7 @@
 
 .signup-left-text {
   color: rgba(224, 224, 224, 0.74);
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 12px;
   font-weight: 500;
   line-height: normal;
@@ -17,18 +17,32 @@
 }
 
 .signup-right-button {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 12px;
   font-weight: 600;
-  line-height: 70px; /* reduced from 124px to fit closer spacing */
-  background: linear-gradient(114deg, #9A58FF 20.91%, #ED066B 45.36%, #ED066B 58.45%, #9A58FF 79.06%);
+  line-height: 70px;
+  background: linear-gradient(
+    114deg,
+    #9a58ff 20.91%,
+    #ed066b 45.36%,
+    #ed066b 58.45%,
+    #9a58ff 79.06%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
   border: none;
   cursor: pointer;
-  font-feature-settings: 'ss02' on;
+  font-feature-settings: "ss02" on;
+  transition:
+    transform 0.2s ease-in-out,
+    opacity 0.2s ease-in-out;
+}
+
+.signup-right-button:hover {
+  opacity: 0.8; /* 🔹 fades gradient a bit on hover */
+  transform: scale(1.05); /* 🔹 slight grow effect */
 }
 
 .signup-right-button:focus {
@@ -36,5 +50,5 @@
 }
 
 .signup-right-button:active {
-  transform: scale(0.95); /* subtle click effect */
+  transform: scale(0.95); /* subtle press effect */
 }

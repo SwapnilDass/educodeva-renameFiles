@@ -1,5 +1,5 @@
 import React from "react";
-import "../../../styles/SocialButtons.css";
+import "../../../styles/Login-styles/SocialButtons.css";
 
 const SocialButtons: React.FC = () => {
   return (

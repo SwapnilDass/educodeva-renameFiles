@@ -1,5 +1,5 @@
 import React from "react";
-import "../../../styles/EmailField.css"; // updated path for your folder structure
+import "../../../styles/Login-styles/EmailField.css"; // updated path for your folder structure
 
 const EmailField: React.FC = () => {
   return (

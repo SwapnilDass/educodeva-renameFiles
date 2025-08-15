@@ -1,5 +1,5 @@
 import React from "react";
-import "../../../styles/greeting.css";
+import "../../../styles/Login-styles/greeting.css";
 
 const Greeting: React.FC = () => {
   return (
