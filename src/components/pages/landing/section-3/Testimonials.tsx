@@ -3,12 +3,12 @@ import PlaneBadge from "./PlaneBadge";
 import TestimonialGrid from "./TestimonialGrid";
 
 // Accept typical HTML <section> attributes (like className) for reusability
-interface TestimonialSectionProps extends HTMLAttributes<HTMLElement> {}
+interface TestimonialsProps extends HTMLAttributes<HTMLElement> {}
 
-export default function TestimonialSection({
+export default function Testimonials({
   className,
   ...props
-}: TestimonialSectionProps) {
+}: TestimonialsProps) {
   return (
     <section
       className={`flex flex-col items-center justify-center bg-[#050222] ${className}`}
