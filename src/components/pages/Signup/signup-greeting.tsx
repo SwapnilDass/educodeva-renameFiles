@@ -6,9 +6,9 @@ interface GreetingProps {
   subtitle?: string;
 }
 
-const Greeting: React.FC<GreetingProps> = ({ 
-  title = "Hey! Glad to see you again.", 
-  subtitle = "👋 Welcome back! Log In or Sign Up to your account below." 
+const Greeting: React.FC<GreetingProps> = ({
+  title = "Millions of Students. One Platform.",
+  subtitle = "Sign up today and join millions of students worldwide on their learning journey. Code, Hangout & Practice together, all through One Platform.",
 }) => {
   return (
     <div className="greeting-container">

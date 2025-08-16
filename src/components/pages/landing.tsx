@@ -1,5 +1,6 @@
 import "../../styles/index.css";
 import Login from "./Login/login";
+import Signup from "./Signup/signup";
 
 export default function Landing() {
   return (

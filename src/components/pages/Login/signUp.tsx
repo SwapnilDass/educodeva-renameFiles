@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../../../styles/Login-styles/signUp.css"; // updated path for your folder structure
 
 const Signup: React.FC = () => {
@@ -7,16 +8,10 @@ const Signup: React.FC = () => {
       {/* Left Text */}
       <span className="signup-left-text">Don't have an account?</span>
 
-      {/* Right Text as Button */}
-      <button
-        className="signup-right-button"
-        onClick={() => {
-          console.log("Sign Up Now clicked!");
-          // Add your navigation or signup logic here
-        }}
-      >
+      {/* Right Text as Link */}
+      <Link to="/signup" className="signup-right-button">
         Sign Up Now!
-      </button>
+      </Link>
     </div>
   );
 };

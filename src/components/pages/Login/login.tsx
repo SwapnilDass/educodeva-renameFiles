@@ -14,9 +14,9 @@ import "../../../styles/Login-styles/login.css"; // Import CSS file
 
 const Login: React.FC = () => {
   return (
-    <div className="login-page">
+    <div className="auth-page">
       {/*Gray Layout*/}
-      <div className="login-container">
+      <div className="auth-container">
         {/* Logo at the top */}
         <Logo />
 
