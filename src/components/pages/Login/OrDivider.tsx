@@ -1,8 +1,9 @@
 import React from "react";
+//import "../../../styles/Login-styles/OrDivider.css";
 
 const OrDivider: React.FC = () => {
   return (
-    <div className="flex items-center justify-center mt-4 w-full max-w-[520px] mx-auto">
+    <div className="mx-auto mt-2 flex w-full max-w-[460px] items-center justify-center">
       {/* Left line */}
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -18,7 +19,7 @@ const OrDivider: React.FC = () => {
       </svg>
 
       {/* Or Text */}
-      <span className="text-white font-inter text-[12px] font-semibold leading-none mx-2">
+      <span className="font-inter mx-2 text-[12px] font-semibold leading-none text-white">
         Or
       </span>
 

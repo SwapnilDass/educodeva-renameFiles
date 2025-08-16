@@ -10,7 +10,7 @@ import OrDivider from "../Login/OrDivider";
 import SocialButtons from "../Login/SocialButtons";
 import Footer from "../Login/footer";
 
-import "../../../styles/Login-styles/login.css";
+import "../../../styles/login-styles/login.css";
 
 const Signup: React.FC = () => {
   return (

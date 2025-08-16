@@ -3,7 +3,7 @@
 }
 
 .greeting-main {
-  @apply mb-2 font-sans text-[22px] font-extrabold leading-[28px] text-white;
+  @apply mb-3 font-sans text-[22px] font-extrabold leading-[28px] text-white;
 }
 
 .greeting-sub {

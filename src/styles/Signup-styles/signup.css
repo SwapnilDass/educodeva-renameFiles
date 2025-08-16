@@ -7,28 +7,3 @@
 .signup-container {
   @apply flex h-[750px] w-[90%] max-w-full flex-col items-center rounded-[25px] border border-white/20 bg-gray-800/50 p-6 shadow-md backdrop-blur-[15px];
 }
-
-/* Responsive widths */
-@media (min-width: 640px) {
-  .signup-container {
-    @apply w-[70%];
-  }
-}
-
-@media (min-width: 768px) {
-  .signup-container {
-    @apply w-[50%];
-  }
-}
-
-@media (min-width: 1024px) {
-  .signup-container {
-    @apply w-[40%];
-  }
-}
-
-@media (min-width: 1280px) {
-  .signup-container {
-    @apply w-[30%];
-  }
-}

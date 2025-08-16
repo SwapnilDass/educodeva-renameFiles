@@ -14,8 +14,16 @@
 }
 
 /* Icon inside the wrapper */
-.pass-input-wrapper svg {
+.pass-input-wrapper > svg {
   @apply h-5 w-5 shrink-0 text-white/60;
+}
+
+.eye-button {
+  @apply absolute left-80 flex items-center justify-center;
+}
+
+.eye-button svg {
+  @apply h-5 w-5 text-white/60;
 }
 
 /* Actual input */
