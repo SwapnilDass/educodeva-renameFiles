@@ -5,7 +5,7 @@ import Logo from "../Login/logo";
 import Greeting from "./signup-greeting";
 import EmailField from "../Login/EmailField";
 import PassField from "../Login/PassField";
-import LoginButton from "../Login/loginButton";
+import SignUpButton from "./signup-button";
 import OrDivider from "../Login/OrDivider";
 import SocialButtons from "../Login/SocialButtons";
 import Footer from "../Login/footer";
@@ -28,7 +28,7 @@ const Signup: React.FC = () => {
         <PassField />
 
         {/* Signup button (reuse LoginButton, but customize text) */}
-        <LoginButton label="Sign Up" />
+        <SignUpButton />
 
         {/* Divider */}
         <OrDivider />
@@ -44,3 +44,4 @@ const Signup: React.FC = () => {
 };
 
 export default Signup;
+
