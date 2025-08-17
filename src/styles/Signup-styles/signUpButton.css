@@ -1,0 +1,44 @@
+.signUp-button {
+  width: 100%;
+  max-width: 460px;
+  height: 47px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #000000; /* text-black */
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  padding: 0.75rem 1rem;
+  margin-top: 1.25rem;
+  margin-bottom: 3.4rem;
+  border: none;
+  cursor: pointer;
+
+  /* smooth animation */
+  transition:
+    transform 0.15s ease-in-out,
+    background-color 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+}
+
+.signUp-button:hover {
+  background-color: #d6d6d6; /* 🔹 darker gray */
+  color: #111111; /* 🔹 slightly darker text */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.signUp-button:focus {
+  outline: none;
+}
+
+.signUp-button:active {
+  transform: scale(0.95);
+  background-color: #bfbfbf; /* 🔹 even darker */
+  color: #000000; /* keep text strong */
+}
+
+.signUp-button-clicked {
+  transform: scale(0.97);
+}
