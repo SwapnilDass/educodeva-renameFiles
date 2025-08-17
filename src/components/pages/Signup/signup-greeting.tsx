@@ -1,5 +1,5 @@
 import React from "react";
-import "../../../styles/Login-styles/greeting.css";
+import "../../../styles/Signup-styles/greeting.css";
 
 interface GreetingProps {
   title?: string;
