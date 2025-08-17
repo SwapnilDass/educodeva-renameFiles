@@ -38,8 +38,8 @@ const SocialButtons: React.FC = () => {
         <img
           src="/logos/discord.png" // <-- absolute path from public folder
           alt="Discord"
-          width={27}
-          height={27}
+          width={25}
+          height={25}
         />
         Continue with Discord
       </button>
