@@ -11,18 +11,20 @@ export default function Testimonials({
 }: TestimonialsProps) {
   return (
     <section
-      className={`flex flex-col items-center justify-center bg-[#050222] ${className}`}
+      className={`flex flex-col items-center justify-center bg-[#050222] py-28 ${className}`}
       {...props} // Other HTML <section> attributes
     >
       <div className="h-[85%] w-[80%]">
         {/* Header */}
-        <div className="mb-16 flex h-fit items-center gap-12">
+        <div className="mb-16 flex h-fit justify-start gap-8 sm:items-center sm:gap-12">
           {/* Badge */}
-          <PlaneBadge />
+          <div className="max-sm:mt-2">
+            <PlaneBadge />
+          </div>
 
           {/* Title and description */}
-          <div className="flex h-full flex-col justify-between">
-            <h2 className="text-[1.7rem] font-medium">
+          <div className="flex h-full flex-col justify-between gap-y-3">
+            <h2 className="text-xl font-medium md:text-[1.7rem]">
               Bringing students together,{" "}
               <span
                 style={{
@@ -37,7 +39,7 @@ export default function Testimonials({
               </span>
             </h2>
 
-            <p className="text-[1.2rem] font-normal text-white/70">
+            <p className="text-base font-normal text-white/70 sm:text-[1.2rem]">
               Building the future of learning by making it accessible to
               students worldwide.
             </p>
