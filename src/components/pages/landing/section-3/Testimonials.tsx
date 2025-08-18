@@ -2,8 +2,9 @@ import SectionHeader from "@/components/shared/SectionHeader";
 import { HTMLAttributes } from "react";
 import PlaneBadge from "./PlaneBadge";
 import TestimonialGrid from "./TestimonialGrid";
+import clsx from "clsx";
 
-// Accept typical HTML <section> attributes (like className) for reusability
+// Include HTML element attributes (like className) for reusability
 interface TestimonialsProps extends HTMLAttributes<HTMLElement> {}
 
 export default function Testimonials({
@@ -12,12 +13,15 @@ export default function Testimonials({
 }: TestimonialsProps) {
   return (
     <section
-      className={`flex flex-col items-center justify-center bg-[#050222] py-28 ${className}`}
+      className={clsx(
+        "flex flex-col items-center justify-center bg-[#050222]",
+        className,
+      )}
       {...props} // Other HTML <section> attributes
     >
-      <div className="h-[85%] w-[80%]">
+      <div className="w-[90%] sm:w-[85%] md:w-[80%]">
         <SectionHeader
-          badge={<PlaneBadge />}
+          badge={<PlaneBadge className="md:ml-1 lg:ml-2" />}
           title="Bringing students together,"
           highlight="One step at a time."
           description="Building the future of learning by making it accessible to students worldwide."

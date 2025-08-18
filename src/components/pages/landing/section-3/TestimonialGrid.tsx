@@ -86,7 +86,7 @@ export default function TestimonialGrid() {
       if (window.innerWidth < 768) {
         return 4; // For small screens (sm: 640px and up)
       } else if (window.innerWidth < 1024) {
-        return 8; // For medium screens (md: 768px and up)
+        return 7; // For medium screens (md: 768px and up)
       } else {
         return 13; // For large screens (lg: 1024px and up)
       }
@@ -109,34 +109,32 @@ export default function TestimonialGrid() {
   }, [showAll]);
 
   return (
-    <div className="relative h-fit columns-1 gap-x-[1.375rem] space-y-[1.625rem] md:columns-2 lg:columns-3">
-      {entries.slice(0, visibleCount).map((entry, index) => (
-        <TestimonialCard key={index} {...entry} />
-      ))}
+    <div className="relative flex justify-center">
+      <div className="h-fit columns-1 gap-x-[1.375rem] space-y-[1.625rem] md:columns-2 lg:columns-3">
+        {entries.slice(0, visibleCount).map((entry, index) => (
+          <TestimonialCard key={index} {...entry} />
+        ))}
 
-      {!showAll && (
-        <>
-          {/* Gradient overlay */}
-          <div className="pointer-events-none absolute bottom-0 left-0 right-0 z-10 h-[26rem] bg-gradient-to-t from-[#050222] from-[12%] to-transparent md:h-[34rem]" />
+        {!showAll && (
+          <>
+            {/* Gradient overlay */}
+            <div className="pointer-events-none absolute bottom-0 left-0 right-0 z-10 h-[26rem] bg-gradient-to-t from-[#050222] from-[12%] to-transparent md:h-[34rem]" />
 
-          <div className="absolute bottom-6 left-1/2 z-20 flex w-full -translate-x-1/2 justify-center">
-            <button
-              className="rounded-lg border border-white/[7%] bg-gradient-to-b from-white/[18%] to-white/10 px-[3.875rem] py-3 font-medium text-white transition hover:bg-white/30"
-              onClick={handleShowMore}
-            >
-              <span
-                className="bg-gradient-to-b from-white to-white/60 bg-clip-text"
-                style={{
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                }}
+            <div className="absolute bottom-6 left-1/2 z-20 flex w-full -translate-x-1/2 justify-center">
+              <button
+                className="relative overflow-hidden rounded-lg border-[1.25px] border-white/[18%] px-[3.875rem] py-3 font-medium text-white transition hover:bg-white/30"
+                onClick={handleShowMore}
               >
-                Show more
-              </span>
-            </button>
-          </div>
-        </>
-      )}
+                {/* Button gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-b from-white/[18%] to-white/10"></div>
+                <span className="relative text-clip bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent">
+                  Show More
+                </span>
+              </button>
+            </div>
+          </>
+        )}
+      </div>
     </div>
   );
 }

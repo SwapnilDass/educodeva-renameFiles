@@ -18,7 +18,7 @@ export default function SectionHeader({
   return (
     <div
       className={clsx(
-        "mb-16 flex h-fit justify-start gap-8 sm:items-center sm:gap-12",
+        "mb-12 flex h-fit gap-8 md:mb-14 md:gap-10 lg:mb-16 lg:items-center lg:gap-12",
         className,
       )}
     >
@@ -26,22 +26,14 @@ export default function SectionHeader({
 
       {/* Title and description */}
       <div className="flex h-full flex-col justify-between gap-y-3">
-        <h2 className="text-xl font-medium md:text-[1.7rem]">
+        <h2 className="text-xl font-medium md:text-[1.45rem] lg:text-[1.7rem]">
           {title}{" "}
-          <span
-            style={{
-              background:
-                "linear-gradient(to bottom, #ED066B 20%, #FFFFFF 92.23%)",
-              backgroundClip: "text",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-            }}
-          >
+          <span className="bg-gradient-to-b from-[#ED066B] from-20% to-white to-[92%] bg-clip-text text-transparent">
             {highlight}
           </span>
         </h2>
 
-        <p className="text-base font-normal text-white/70 sm:text-[1.2rem]">
+        <p className="text-base font-normal text-white/70 md:text-[1.1rem] lg:text-[1.2rem]">
           {description}
         </p>
       </div>

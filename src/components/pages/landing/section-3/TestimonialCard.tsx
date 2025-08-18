@@ -1,4 +1,7 @@
-interface TestimonialCardProps {
+import { HTMLAttributes } from "react";
+import clsx from "clsx";
+
+interface TestimonialCardProps extends HTMLAttributes<HTMLDivElement> {
   username: string;
   handle: string;
   body: string;
@@ -12,9 +15,17 @@ export default function TestimonialCard({
   body,
   pfp,
   image,
+  className,
+  ...props
 }: TestimonialCardProps) {
   return (
-    <div className="break-inside-avoid rounded-xl border border-white/15 bg-white/10 px-5 py-4">
+    <div
+      className={clsx(
+        "max-w-[30rem] break-inside-avoid rounded-xl border-[1.6px] border-white/[8%] bg-white/10 px-5 py-4",
+        className,
+      )}
+      {...props}
+    >
       <div className="space-y-4">
         {/* User information (pfp, username, handle) */}
         <div className="flex items-center gap-4">
