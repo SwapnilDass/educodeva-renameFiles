@@ -1,15 +1,14 @@
 .footer-page {
-  position: absolute;
-  top: 0;
-  left: 0;
+  @apply flex flex-col items-center gap-4 text-center;
+  background-color: #0b0720;
   width: 100%;
-  height: 100%;
-  background: #050222;
+  min-height: 100vh; /* full screen height */
+}
 
-  display: flex;
-  flex-direction: column; /* stack items vertically */
-  justify-content: flex-start; /* start from top */
-  align-items: center;   /* center horizontally */
+.footer-logo-wrapper {
+  @apply mb-28 flex justify-center;
+}
 
-  padding-top: 2rem;     /* space from top */
+.footer-content {
+  @apply flex flex-col items-center gap-4;
 }

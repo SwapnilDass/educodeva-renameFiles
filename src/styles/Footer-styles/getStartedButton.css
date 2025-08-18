@@ -1,42 +1,20 @@
-.get-started-button {
-  width: 100%;
-  max-width: 300px;   /* increase width */
-  height: 60px;       /* taller button */
-  border-radius: 30px; /* slightly rounder */
-  background-color: #ffffff;
-  color: #000000;
-  font-family: "Inter", sans-serif;
-  font-size: 18px;    /* bigger text */
-  font-weight: 700;
-  line-height: normal;
-  padding: 1rem; /* more padding */
-  margin-top: 3.5rem;
-  border: none;
-  cursor: pointer;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  transition:
-    transform 0.15s ease-in-out,
-    background-color 0.2s ease-in-out,
-    box-shadow 0.2s ease-in-out,
-    color 0.2s ease-in-out;
+.get-started-button {
+  @apply mt-14 h-[60px] w-full max-w-[300px] transform cursor-pointer rounded-[30px] bg-white p-4 text-lg font-bold leading-normal text-black transition duration-200 ease-in-out;
 }
 
 .get-started-button:hover {
-  background-color: #d6d6d6; /* darker gray */
-  color: #111111;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  @apply bg-gray-300 text-[#111111] shadow-lg;
 }
 
 .get-started-button:focus {
-  outline: none;
+  @apply outline-none;
 }
 
 .get-started-button:active {
-  transform: scale(0.95);
-  background-color: #bfbfbf;
-  color: #000000;
-}
-
-.get-started-button-clicked {
-  transform: scale(0.97);
+  @apply scale-95 bg-gray-400 text-black;
+  transition-duration: 150ms; /* fast squeeze in & out */
 }

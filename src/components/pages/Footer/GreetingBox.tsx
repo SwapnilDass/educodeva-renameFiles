@@ -1,21 +1,14 @@
 import React, { useState } from "react";
-import "../../../styles/Footer-styles/getStartedButton.css"; // adjust path
+import "../../../styles/Footer-styles/greeting-box.css"; // adjust path
 
-interface GetStartedButtonProps {
-  label?: string;
-}
-
-const GetStartedButton: React.FC<GetStartedButtonProps> = ({ label = "Get Started" }) => {
-  const [clicked, setClicked] = useState(false);
-
+const GreetingBox: React.FC = () => {
   return (
-    <button
-      className={`get-started-button ${clicked ? "get-started-button-clicked" : ""}`}
-      onClick={() => setClicked(!clicked)} // toggle clicked state
-    >
-      {label}
-    </button>
+    <div className="greeting-box">
+      <h2 className="greeting-title">
+        Ready to <span className="greeting-accent">Sharpen your Skills?</span>
+      </h2>
+    </div>
   );
 };
 
-export default GetStartedButton;
+export default GreetingBox;
