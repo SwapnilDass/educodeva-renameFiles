@@ -1,11 +1,15 @@
 import { HTMLAttributes } from "react";
+import clsx from "clsx";
 
 interface PlaneBadgeProps extends HTMLAttributes<HTMLDivElement> {}
 
 export default function PlaneBadge({ className, ...props }: PlaneBadgeProps) {
   return (
     <div
-      className={`h-16 w-16 flex-shrink-0 rounded-[10px] bg-[#ED066B] p-[18px] ${className}`}
+      className={clsx(
+        "h-16 w-16 flex-shrink-0 rounded-[10px] bg-[#ED066B] p-[18px]",
+        className,
+      )}
       {...props}
     >
       <svg
