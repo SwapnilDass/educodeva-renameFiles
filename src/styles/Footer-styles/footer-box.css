@@ -1,0 +1,57 @@
+.footer-box {
+  @apply mx-auto min-h-[500px] w-[1000px] rounded-t-2xl bg-gradient-to-b from-[rgba(20,20,35,0.95)] to-[rgba(10,10,20,1)] px-12 pb-8 pt-8 text-white;
+}
+
+.footer-container {
+  @apply flex items-start justify-between gap-16; /* left vs right split */
+}
+
+.footer-left {
+  @apply flex max-w-sm flex-col gap-4; /* keep description on left stacked */
+}
+
+.footer-brand {
+  @apply -mt-8 flex items-center gap-4;
+}
+
+.footer-title {
+  @apply text-lg font-bold;
+}
+
+.footer-description {
+  @apply mt-16 text-lg leading-relaxed text-gray-300;
+}
+
+.footer-links {
+  @apply mt-16 grid grid-cols-3 gap-20; /* 3 equal columns */
+}
+.footer-links > div {
+  @apply flex flex-col; /* stack title + ul vertically */
+}
+
+.footer-links h3 {
+  @apply mb-2 text-base font-bold;
+}
+
+.footer-links ul {
+  @apply m-0 list-none p-0; /* remove default padding and margin */
+}
+
+.footer-links li {
+  @apply my-1 cursor-pointer pl-0 text-sm; /* make sure no extra left padding */
+}
+.footer-links li:hover {
+  @apply text-pink-400;
+}
+
+.footer-bottom {
+  @apply mt-52 flex flex-wrap justify-between border-t border-white/20 pt-4 text-sm text-gray-400;
+}
+
+.footer-legal {
+  @apply flex gap-6;
+}
+
+.footer-legal span:hover {
+  @apply cursor-pointer text-white;
+}
