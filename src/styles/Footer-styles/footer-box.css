@@ -1,5 +1,5 @@
 .footer-box {
-  @apply mx-auto min-h-[500px] w-[1000px] rounded-t-2xl bg-gradient-to-b from-[rgba(20,20,35,0.95)] to-[rgba(10,10,20,1)] px-12 pb-8 pt-8 text-white;
+  @apply mx-auto min-h-[500px] w-[1000px] rounded-t-2xl bg-gradient-to-b from-[rgba(10,10,46,0.95)] to-[rgba(10,10,20,1)] px-12 pb-8 pt-8 text-white;
 }
 
 .footer-container {
