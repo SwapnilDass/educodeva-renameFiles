@@ -1,0 +1,16 @@
+.footer-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-logo svg {
+  display: block; /* removes inline spacing */
+  width: 120px; /* same as your current width */
+  height: auto;
+}
