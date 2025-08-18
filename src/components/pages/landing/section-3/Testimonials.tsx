@@ -19,7 +19,7 @@ export default function Testimonials({
       )}
       {...props} // Other HTML <section> attributes
     >
-      <div className="w-[90%] sm:w-[85%] md:w-[80%]">
+      <div className="w-[87%] md:w-[80%]">
         <SectionHeader
           badge={<PlaneBadge className="md:ml-1 lg:ml-2" />}
           title="Bringing students together,"
