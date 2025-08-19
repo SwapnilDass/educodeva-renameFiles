@@ -16,7 +16,7 @@ export default function SectionHeader({
   className,
 }: SectionHeaderProps) {
   return (
-    <div
+    <header
       className={clsx(
         "mb-12 flex h-fit gap-8 md:mb-14 md:gap-10 lg:mb-16 lg:items-center lg:gap-12",
         className,
@@ -37,6 +37,6 @@ export default function SectionHeader({
           {description}
         </p>
       </div>
-    </div>
+    </header>
   );
 }

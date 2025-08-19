@@ -1,5 +1,5 @@
-import { HTMLAttributes } from "react";
 import clsx from "clsx";
+import { HTMLAttributes } from "react";
 
 interface TestimonialCardProps extends HTMLAttributes<HTMLDivElement> {
   username: string;
@@ -19,7 +19,7 @@ export default function TestimonialCard({
   ...props
 }: TestimonialCardProps) {
   return (
-    <div
+    <article
       className={clsx(
         "max-w-[42rem] break-inside-avoid rounded-xl border-[1.6px] border-white/[8%] bg-white/10 px-5 py-4",
         className,
@@ -48,6 +48,6 @@ export default function TestimonialCard({
           )}
         </div>
       </div>
-    </div>
+    </article>
   );
 }
