@@ -11,12 +11,12 @@ const Greeting: React.FC<GreetingProps> = ({
   subtitle = "Sign up today and join millions of students worldwide on their learning journey. Code, Hangout & Practice together, all through One Platform.",
 }) => {
   return (
-    <div className="greeting-container">
+    <div className="signup-greeting-container">
       {/* Main greeting */}
-      <h1 className="greeting-main">{title}</h1>
+      <h1 className="signup-greeting-main">{title}</h1>
 
       {/* Sub greeting */}
-      <div className="greeting-sub">
+      <div className="signup-greeting-sub">
         <p>{subtitle}</p>
       </div>
     </div>
