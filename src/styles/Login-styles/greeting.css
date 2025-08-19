@@ -1,35 +1,17 @@
 .greeting-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  max-width: 90%;
+  @apply flex flex-col items-center text-center max-w-[90%];
 }
 
 .greeting-main {
-  margin-bottom: 12px; /* spacing below main title */
-  font-family: 'Inter', sans-serif;
-  font-size: 22px;
-  font-weight: 800;
-  line-height: 28px;
-  color: white;
+  @apply mb-3 font-sans text-[22px] font-extrabold leading-[28px] text-white;
 }
 
 .greeting-sub {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 4px; /* space between the two lines */
-  width: 100%;
-  min-height: 60px; /* fixed height so everything below stays aligned */
+  @apply flex flex-col items-center justify-center gap-1 w-full min-h-[65px];
 }
 
 .greeting-sub p {
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22px;
-  color: rgba(255, 255, 255, 0.8);
-  margin: 0;
+  @apply font-sans text-[16px] font-normal leading-[22px] text-white/80 m-0;
 }
+
+
