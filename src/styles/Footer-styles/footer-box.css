@@ -1,5 +1,5 @@
 .footer-box {
-  @apply mx-auto min-h-[500px] w-[1000px] rounded-t-2xl bg-gradient-to-b from-[rgba(10,10,46,0.95)] to-[rgba(10,10,20,1)] px-12 pb-8 pt-8 text-white;
+  @apply mx-auto mb-28 mt-20 min-h-[455px] w-[1200px] rounded-[60px] border border-white/10 bg-gradient-to-b from-[rgba(9,9,33,0.95)] to-[#121224] px-12 pb-8 pt-8 text-white;
 }
 
 .footer-container {
@@ -19,33 +19,31 @@
 }
 
 .footer-description {
-  @apply mt-16 text-lg leading-relaxed text-gray-300;
+  @apply mt-20 text-lg leading-relaxed text-gray-300;
 }
 
-.footer-links {
-  @apply mt-16 grid grid-cols-3 gap-20; /* 3 equal columns */
-}
 .footer-links > div {
-  @apply flex flex-col; /* stack title + ul vertically */
+  @apply mt-16 flex flex-col gap-0.5; /* prevents flex items from stretching */
 }
 
 .footer-links h3 {
-  @apply mb-2 text-base font-bold;
+  @apply mb-2 text-xl font-extrabold leading-relaxed text-gray-200;
 }
 
 .footer-links ul {
-  @apply m-0 list-none p-0; /* remove default padding and margin */
+  @apply m-0 list-none p-0 text-sm leading-relaxed text-gray-300;
 }
 
 .footer-links li {
-  @apply my-1 cursor-pointer pl-0 text-sm; /* make sure no extra left padding */
+  @apply my-1 cursor-pointer pl-0 text-lg leading-relaxed text-gray-300;
 }
+
 .footer-links li:hover {
-  @apply text-pink-400;
+  @apply text-white;
 }
 
 .footer-bottom {
-  @apply mt-52 flex flex-wrap justify-between border-t border-white/20 pt-4 text-sm text-gray-400;
+  @apply mt-20 flex flex-wrap justify-between border-t border-white/20 pt-4 text-sm text-gray-400;
 }
 
 .footer-legal {
