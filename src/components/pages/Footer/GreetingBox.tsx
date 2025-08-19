@@ -1,12 +1,13 @@
-import React, { useState } from "react";
-import "../../../styles/Footer-styles/greeting-box.css"; // adjust path
+import React from "react";
+import "../../../styles/Footer-styles/greeting-box.css";
 
 const GreetingBox: React.FC = () => {
   return (
-    <div className="greeting-box">
-      <h2 className="greeting-title">
-        Ready to <span className="greeting-accent">Sharpen your Skills?</span>
-      </h2>
+    <div className="greeting-container">
+      <h1 className="greeting-main">
+        <span className="main-greeting-normal">Ready to</span>
+        <span className="main-greeting-gradient">Sharpen your Skills?</span>
+      </h1>
     </div>
   );
 };
