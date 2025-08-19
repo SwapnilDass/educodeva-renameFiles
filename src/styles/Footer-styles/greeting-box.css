@@ -1,14 +1,20 @@
-.greeting-box {
-  @apply flex w-full items-center justify-center px-4 text-center;
+.greeting-container {
+    @apply flex flex-col items-center text-center max-w-[90%] px-5;
+  }
+
+.greeting-main {
+    @apply m-0 leading-[1.1];
+  }
+
+.main-greeting-normal,
+.main-greeting-gradient {
+    @apply inline-block font-sans text-[30px] font-medium leading-[55px] text-center;
+  }
+
+.main-greeting-normal {
+    @apply text-white pr-2;
 }
 
-/* Main headline */
-.greeting-title {
-  @apply font-sans text-[22px] font-extrabold leading-tight text-white sm:text-[28px] md:text-[32px];
-}
-
-/* Gradient / pink accent word(s) */
-.greeting-accent {
-  @apply bg-clip-text text-transparent;
-  background-image: linear-gradient(90deg, #ff6ccf 0%, #ff85b3 100%);
+.main-greeting-gradient {
+    @apply bg-gradient-to-br from-[#ED066B] via-[#ED066B] to-white bg-clip-text text-transparent;
 }
