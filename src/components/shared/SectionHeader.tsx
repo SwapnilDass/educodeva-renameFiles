@@ -1,6 +1,7 @@
 import clsx from "clsx";
+import { HTMLAttributes } from "react";
 
-interface SectionHeaderProps {
+interface SectionHeaderProps extends HTMLAttributes<HTMLElement> {
   badge: React.ReactNode;
   title: string;
   highlight: string;
@@ -14,6 +15,7 @@ export default function SectionHeader({
   highlight,
   description,
   className,
+  ...props
 }: SectionHeaderProps) {
   return (
     <header
@@ -21,6 +23,7 @@ export default function SectionHeader({
         "mb-12 flex h-fit gap-8 md:mb-14 md:gap-10 lg:mb-16 lg:items-center lg:gap-12",
         className,
       )}
+      {...props}
     >
       {badge}
 

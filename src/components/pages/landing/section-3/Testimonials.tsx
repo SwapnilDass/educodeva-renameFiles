@@ -13,13 +13,10 @@ export default function Testimonials({
 }: TestimonialsProps) {
   return (
     <section
-      className={clsx(
-        "flex flex-col items-center justify-center bg-[#050222]",
-        className,
-      )}
-      {...props} // Other HTML <section> attributes
+      className={clsx("flex flex-col items-center bg-[#050222]", className)}
+      {...props} // Other HTML element attributes
     >
-      <div className="w-[87%] md:w-[80%]">
+      <div className="w-[87%] max-w-fit sm:w-[80%]">
         <SectionHeader
           badge={<PlaneBadge className="md:ml-1 lg:ml-2" />}
           title="Bringing students together,"
