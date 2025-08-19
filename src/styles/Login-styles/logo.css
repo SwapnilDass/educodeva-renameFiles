@@ -1,8 +1,4 @@
+/* Tailwind CSS version of your logo styles */
 .logo-svg {
-  width: 84px;            /* fixed width */
-  height: 35px;           /* fixed height */
-  margin-top: 1rem;
-  margin-bottom: 1rem;  /* spacing below the logo */
-  display: block;
-  flex-shrink: 0;         /* prevents shrinking in flex containers */
+  @apply w-[84px] h-[35px] mt-4 mb-4 block flex-shrink-0;
 }
