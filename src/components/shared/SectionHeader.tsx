@@ -29,7 +29,7 @@ export default function SectionHeader({
       <SectionBadge icon={badgeIcon} className="ml-1 hidden sm:block lg:ml-2" />
 
       {/* Title and description */}
-      <div className="flex h-full flex-col justify-between gap-y-4 sm:gap-y-3">
+      <div className="flex h-full flex-col justify-between gap-y-6 sm:gap-y-3">
         <div className="flex items-center gap-6">
           <SectionBadge icon={badgeIcon} className="sm:hidden" />
           <h2 className="text-lg font-medium sm:text-xl md:text-[1.45rem] lg:text-[1.7rem]">
