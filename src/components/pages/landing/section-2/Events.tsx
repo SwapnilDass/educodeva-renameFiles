@@ -1,12 +1,12 @@
 import SectionHeader from "@/components/shared/SectionHeader";
-import CalendarBadge from "./CaledarBadge";
+import CalendarSvg from "./CalendarSvg";
 
 export default function Events() {
   return (
     <section className="flex flex-col items-center justify-center bg-[#050222] py-28">
       <div className="h-[85%] w-[80%]">
         <SectionHeader
-          badge={<CalendarBadge />}
+          badgeIcon={<CalendarSvg />}
           title="Educative events,"
           highlight="Redesigned"
           description="Creating a more globally accessible way of participating, organizing, and managing events. All through one Platform."

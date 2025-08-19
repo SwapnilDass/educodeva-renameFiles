@@ -1,8 +1,9 @@
 import clsx from "clsx";
 import { HTMLAttributes } from "react";
+import SectionBadge from "./SectionBadge";
 
 interface SectionHeaderProps extends HTMLAttributes<HTMLElement> {
-  badge: React.ReactNode;
+  badgeIcon: React.ReactNode;
   title: string;
   highlight: string;
   description: string;
@@ -10,7 +11,7 @@ interface SectionHeaderProps extends HTMLAttributes<HTMLElement> {
 }
 
 export default function SectionHeader({
-  badge,
+  badgeIcon,
   title,
   highlight,
   description,
@@ -25,7 +26,7 @@ export default function SectionHeader({
       )}
       {...props}
     >
-      {badge}
+      <SectionBadge icon={badgeIcon} className="md:ml-1 lg:ml-2" />
 
       {/* Title and description */}
       <div className="flex h-full flex-col justify-between gap-y-3">
