@@ -1,65 +1,66 @@
 .footer-box {
-  @apply mx-auto mb-28 mt-32 min-h-[455px] w-[1200px] rounded-[60px] border border-white/10 bg-gradient-to-b from-[rgba(9,9,33,0.95)] to-[#121224] px-12 pb-8 pt-8 text-white;
+  @apply mx-auto mb-28 mt-32 min-h-[455px] w-[1200px] rounded-[60px] border border-white/10
+         bg-gradient-to-b from-[rgba(9,9,33,0.95)] to-[#121224] px-12 pb-8 pt-16 text-white;
 }
 
-.footer-container {
+.footer-main-container {
   @apply flex items-start justify-between gap-16; /* left vs right split */
 }
 
-.footer-left {
+.footer-left-container {
   @apply flex max-w-sm flex-col gap-4; /* stacked brand + description */
 }
 
-.footer-brand {
-  @apply -mt-6 flex items-center gap-5; /* slightly bigger spacing for logo & text */
+.footer-brand-container {
+  @apply -mt-6 flex items-center gap-5; /* spacing for logo & text */
 }
 
 .footer-box-logo {
-  @apply w-12 h-12; /* slightly bigger logo */
+  @apply w-12 h-12; /* logo size */
 }
 
-.footer-title {
-  @apply text-lg md:text-3xl font-normal; /* slightly bigger and more prominent */
+.footer-brand-title {
+  @apply text-lg md:text-3xl font-normal; /* title size */
 }
 
-.footer-description {
-  @apply mt-20 text-lg md:text-xl leading-relaxed text-gray-300 text-left; /* better readability, left-aligned */
+.footer-brand-description {
+  @apply mt-20 text-lg md:text-xl leading-relaxed text-gray-300 text-left; /* description styling */
 }
 
 /* Right side links */
-.footer-links {
+.footer-links-container {
   @apply flex gap-16; /* horizontal gap between columns */
 }
 
-.footer-links > div {
-  @apply mt-16 flex flex-col items-start gap-1 w-44; /* fixed width + left align all items */
+.footer-link-column {
+  @apply mt-16 flex flex-col items-start gap-1 w-44; /* column layout */
 }
 
-.footer-links h3 {
-  @apply mb-2 text-xl font-normal leading-relaxed text-white text-left; /* brighter heading */
+.footer-link-title {
+  @apply mb-2 text-xl font-normal leading-relaxed text-white text-left; /* heading */
 }
 
-.footer-links ul {
+.footer-link-list {
   @apply m-0 list-none p-0 text-sm leading-relaxed text-gray-300 text-left;
 }
 
-.footer-links li {
+.footer-link-item {
   @apply my-1 cursor-pointer pl-0 text-lg leading-relaxed text-gray-300;
 }
 
-.footer-links li:hover {
+.footer-link-item:hover {
   @apply text-white;
 }
 
 /* Bottom section */
-.footer-bottom {
+.footer-bottom-section {
   @apply mt-20 flex flex-wrap justify-between border-t border-white/20 pt-4 text-sm text-gray-400;
 }
 
-.footer-legal {
+.footer-legal-links {
   @apply flex gap-6;
 }
 
-.footer-legal span:hover {
+.footer-legal-links span:hover {
   @apply cursor-pointer text-white;
 }
