@@ -6,7 +6,7 @@
 /* Main container (shared card) */
 .auth-container {
   @apply flex h-[780px] w-full max-w-[600px] flex-col items-center rounded-[25px] border border-white/20 bg-gray-800/50 p-6 shadow-md backdrop-blur-[15px];
-  min-width: 500px; /* prevents shrink */
+  min-width: 600px; /* prevents shrink */
 }
 
 body {
