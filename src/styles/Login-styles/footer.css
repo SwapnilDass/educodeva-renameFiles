@@ -1,5 +1,5 @@
 .footer-container {
-  @apply mt-8 text-center text-sm text-white;
+  @apply mt-8 text-center text-sm text-white flex flex-col items-center gap-2;
 }
 
 .footer-text {
@@ -7,7 +7,7 @@
 }
 
 .footer-links {
-  @apply flex justify-center gap-8;
+  @apply flex justify-center gap-8; /* horizontal spacing between links */
 }
 
 .footer-link {
@@ -15,7 +15,7 @@
 }
 
 .footer-link:hover {
-  @apply scale-105 text-gray-300; /* 🔹 brighten & slightly enlarge */
+  @apply scale-105 text-gray-300;
 }
 
 .footer-link:active {
