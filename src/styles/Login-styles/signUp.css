@@ -1,0 +1,45 @@
+/* Container for signup section */
+.signup-container {
+  @apply flex flex-wrap justify-center items-center mt-[0.25rem] gap-[0.5rem];
+}
+
+/* Left Text */
+.signup-left-text {
+  @apply font-sans text-[12px] font-medium text-center text-[rgba(224,224,224,0.74)];
+  line-height: normal; /* preserves original */
+}
+
+/* Right Button / Link */
+.signup-right-button {
+  @apply font-sans text-[12px] font-semibold border-none cursor-pointer;
+  line-height: 50px; /* exact original */
+  background: linear-gradient(
+    114deg,
+    #9a58ff 20.91%,
+    #ed066b 45.36%,
+    #ed066b 58.45%,
+    #9a58ff 79.06%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-feature-settings: "ss02" on;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+/* Hover Effect */
+.signup-right-button:hover {
+  @apply opacity-[0.8];
+  transform: scale(1.05);
+}
+
+/* Focus Effect */
+.signup-right-button:focus {
+  @apply outline-none;
+}
+
+/* Active Effect */
+.signup-right-button:active {
+  transform: scale(0.95);
+}

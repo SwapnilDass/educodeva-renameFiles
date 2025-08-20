@@ -1,0 +1,14 @@
+.footer-page {
+  @apply flex flex-col items-center gap-4 text-center;
+  background-color: #0b0720;
+  width: 100%;
+  min-height: 100vh; /* full screen height */
+}
+
+.footer-logo-wrapper {
+  @apply mb-28 flex justify-center;
+}
+
+.footer-content {
+  @apply flex flex-col items-center gap-4;
+}

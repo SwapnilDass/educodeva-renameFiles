@@ -1,0 +1,16 @@
+.signup-greeting-container {
+  @apply flex flex-col items-center text-center max-w-[90%];
+}
+
+.signup-greeting-main {
+  @apply mb-3 text-white font-sans font-extrabold text-[22px] leading-[28px];
+}
+
+.signup-greeting-sub {
+  @apply flex flex-col items-center gap-0 w-full h-[65px] overflow-hidden px-2.5;
+}
+
+.signup-greeting-sub p {
+  @apply m-0 text-[16px] leading-[22px] font-sans font-normal text-white/80;
+}
+

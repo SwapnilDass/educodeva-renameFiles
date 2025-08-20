@@ -1,0 +1,4 @@
+/* Tailwind CSS version of your logo styles */
+.logo-svg {
+  @apply w-[84px] h-[35px] mt-4 mb-4 block flex-shrink-0;
+}

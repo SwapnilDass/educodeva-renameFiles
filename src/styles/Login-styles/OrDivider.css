@@ -1,0 +1,13 @@
+/* or-divider.css */
+
+.or-divider-container {
+  @apply mx-auto mb-5 mt-6 flex w-full max-w-[460px] items-center justify-center;
+}
+
+.or-line {
+  @apply h-px flex-1 bg-gray-500;
+}
+
+.or-text {
+  @apply font-inter mx-2 text-center text-[12px] font-semibold leading-normal text-white;
+}
