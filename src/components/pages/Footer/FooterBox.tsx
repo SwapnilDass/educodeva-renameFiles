@@ -4,10 +4,10 @@ import "../../../styles/Footer-styles/footer-box.css";
 const FooterBox: React.FC = () => {
   return (
     <footer className="footer-box">
-      <div className="footer-container">
+      <div className="footer-main-container">
         {/* Left side: brand + description */}
-        <div className="footer-left">
-          <div className="footer-brand">
+        <div className="footer-left-container">
+          <div className="footer-brand-container">
             <svg
               width="40"
               height="40"
@@ -21,54 +21,53 @@ const FooterBox: React.FC = () => {
                 fill="white"
               />
             </svg>
-            <h2 className="footer-title">Codeva.</h2>
+            <h2 className="footer-brand-title">Codeva.</h2>
           </div>
 
-          {/* Description directly below brand */}
-          <p className="footer-description">
+          <p className="footer-brand-description">
             The first global AI platform where students learn, connect and
             compete in STEM events — powered by community.
           </p>
         </div>
 
         {/* Right side: links */}
-        <div className="footer-links">
-          <div>
-            <h3>Product</h3>
-            <ul>
-              <li>Features</li>
-              <li>Pricing</li>
-              <li>Integration</li>
-              <li>Changelog</li>
+        <div className="footer-links-container">
+          <div className="footer-link-column">
+            <h3 className="footer-link-title">Product</h3>
+            <ul className="footer-link-list">
+              <li className="footer-link-item">Features</li>
+              <li className="footer-link-item">Pricing</li>
+              <li className="footer-link-item">Integration</li>
+              <li className="footer-link-item">Changelog</li>
             </ul>
           </div>
 
-          <div>
-            <h3>Resources</h3>
-            <ul>
-              <li>Documentation</li>
-              <li>Tutorials</li>
-              <li>Blog</li>
-              <li>Support</li>
+          <div className="footer-link-column">
+            <h3 className="footer-link-title">Resources</h3>
+            <ul className="footer-link-list">
+              <li className="footer-link-item">Documentation</li>
+              <li className="footer-link-item">Tutorials</li>
+              <li className="footer-link-item">Blog</li>
+              <li className="footer-link-item">Support</li>
             </ul>
           </div>
 
-          <div>
-            <h3>Company</h3>
-            <ul>
-              <li>About</li>
-              <li>Careers</li>
-              <li>Contact</li>
-              <li>Partners</li>
+          <div className="footer-link-column">
+            <h3 className="footer-link-title">Company</h3>
+            <ul className="footer-link-list">
+              <li className="footer-link-item">About</li>
+              <li className="footer-link-item">Careers</li>
+              <li className="footer-link-item">Contact</li>
+              <li className="footer-link-item">Partners</li>
             </ul>
           </div>
         </div>
       </div>
 
-      {/* Bottom */}
-      <div className="footer-bottom">
+      {/* Bottom section */}
+      <div className="footer-bottom-section">
         <p>© 2025 Codeva. All rights reserved.</p>
-        <div className="footer-legal">
+        <div className="footer-legal-links">
           <span>Privacy Policy</span>
           <span>Terms of Service</span>
         </div>
