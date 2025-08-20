@@ -1,17 +1,20 @@
-import React, { useState } from "react";
-import "../../../styles/Footer-styles/getStartedButton.css"; // adjust path
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import "../../../styles/Footer-styles/getStartedButton.css";
 
 interface GetStartedButtonProps {
   label?: string;
 }
 
-const GetStartedButton: React.FC<GetStartedButtonProps> = ({ label = "Get Started" }) => {
-  const [clicked, setClicked] = useState(false);
+const GetStartedButton: React.FC<GetStartedButtonProps> = ({
+  label = "Get Started",
+}) => {
+  const navigate = useNavigate();
 
   return (
     <button
-      className={`get-started-button ${clicked ? "get-started-button-clicked" : ""}`}
-      onClick={() => setClicked(!clicked)} // toggle clicked state
+      className="get-started-button"
+      onClick={() => navigate("/login")} // redirect to login
     >
       {label}
     </button>
