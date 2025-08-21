@@ -1,6 +1,6 @@
 .footer-page {
   @apply flex flex-col items-center gap-4 text-center;
-  background-color: #0b0720;
+  background-color: #050222;
   width: 100%;
   min-height: 100vh; /* full screen height */
 }
