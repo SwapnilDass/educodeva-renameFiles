@@ -121,20 +121,22 @@ export default function TestimonialGrid({
           <TestimonialCard key={index} {...entry} />
         ))}
 
+        {/* Gradient overlay */}
+        <div
+          className={clsx(
+            "pointer-events-none absolute bottom-0 left-0 right-0 z-10 h-full bg-gradient-to-t from-[#050222] from-[6%] via-transparent via-[70%] to-transparent transition-opacity duration-300",
+            showAll ? "opacity-0" : "opacity-100", // Animation requires gradient div to remain in DOM
+          )}
+        />
+
         {!showAll && (
           <>
-            {/* Gradient overlay */}
-            <div className="pointer-events-none absolute bottom-0 left-0 right-0 z-10 h-[26rem] bg-gradient-to-t from-[#050222] from-[12%] to-transparent md:h-[34rem]" />
-
             {/* Button overlay */}
             <div className="absolute bottom-6 left-1/2 z-20 flex w-full -translate-x-1/2 justify-center">
               <button
-                className="relative flex-shrink-0 overflow-hidden rounded-lg border border-white/[16%] px-[3.875rem] py-[0.75rem] font-medium text-white transition hover:bg-white/30"
+                className="flex-shrink-0 overflow-hidden rounded-lg border border-[#39374E] bg-gradient-to-b from-[#2C2944] to-[#1D1B36] px-[3.875rem] py-[0.75rem] font-medium text-white transition duration-300 hover:opacity-90 active:opacity-80"
                 onClick={handleShowMore}
               >
-                {/* Button gradient */}
-                <div className="absolute inset-0 bg-gradient-to-b from-white/[18%] to-white/10"></div>
-
                 <span className="relative text-clip bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent">
                   Show More
                 </span>
