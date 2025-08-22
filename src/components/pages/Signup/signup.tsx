@@ -1,16 +1,16 @@
 //Reusing Codes.
 
 import React from "react";
-import Logo from "../Login/logo";
-import Greeting from "./signup-greeting";
 import EmailField from "../Login/EmailField";
-import PassField from "../Login/PassField";
-import SignUpButton from "./signup-button";
 import OrDivider from "../Login/OrDivider";
+import PassField from "../Login/PassField";
 import SocialButtons from "../Login/SocialButtons";
 import Footer from "../Login/footer";
+import Logo from "../Login/logo";
+import SignUpButton from "./signup-button";
+import Greeting from "./signup-greeting";
 
-import "../../../styles/login-styles/login.css";
+import "@/styles/Login-styles/login.css";
 
 const Signup: React.FC = () => {
   return (
@@ -44,4 +44,3 @@ const Signup: React.FC = () => {
 };
 
 export default Signup;
-
