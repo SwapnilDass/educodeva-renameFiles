@@ -1,9 +1,9 @@
-import "../../styles/index.css";
-import Hero from "./landing/hero";
-import Events from "./landing/section-2/Events";
-import Testimonials from "./landing/section-3/Testimonials";
+import "../../../styles/index.css";
+import Hero from "./hero";
+import Events from "./section-2/Events";
+import Testimonials from "./section-3/Testimonials";
 //import Login from "./Login/login";
-import FooterPage from "./Footer/FooterPage";
+import FooterPage from "../Footer/FooterPage";
 
 export default function Landing() {
   return (

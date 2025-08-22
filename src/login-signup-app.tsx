@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 
-import Landing from "./components/pages/landing";
+import Landing from "./components/pages/landing/landing.tsx";
 import Login from "./components/pages/Login/login";
 import Signup from "./components/pages/Signup/signup";
 
