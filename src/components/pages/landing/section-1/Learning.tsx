@@ -15,14 +15,19 @@ export default function Learning() {
 
       {/* Feature 1 & 2 */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5 lg:gap-6 mt-0 md:mt-0">
+      {/* Feature 1 & 2 */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5 lg:gap-6 mt-0 md:mt-0">
         <Feature1 />
         <Feature2 />
       </div>
 
       {/* Feature 3, Branding + Feature 4, Feature 5 */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5 lg:gap-6 mt-2 md:mt-3">
+      {/* Feature 3, Branding + Feature 4, Feature 5 */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5 lg:gap-6 mt-2 md:mt-3">
         <Feature3 />
 
+        <div className="flex flex-col gap-4 md:gap-5 lg:gap-6">
         <div className="flex flex-col gap-4 md:gap-5 lg:gap-6">
           <Branding />
           <Feature4 />

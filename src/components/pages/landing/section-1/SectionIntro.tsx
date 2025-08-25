@@ -15,11 +15,13 @@ export default function SectionIntro() {
 
         <div className="max-w-[760px]">
           <h1 className="font-medium tracking-[-0.01em] text-white leading-tight text-[18px] px-5 md:text-[22px] lg:text-[26px]">
+          <h1 className="font-medium tracking-[-0.01em] text-white leading-tight text-[18px] px-5 md:text-[22px] lg:text-[26px]">
             Learn new skills{" "}
             <span className="bg-gradient-to-b from-[#ED066B] to-[#FFFFFF] text-transparent bg-clip-text">
               faster, together.
             </span>
           </h1>
+          <p className="mt-1 text-white/70 leading-snug text-[13px] px-5 md:text-[15px] lg:text-[16px]">
           <p className="mt-1 text-white/70 leading-snug text-[13px] px-5 md:text-[15px] lg:text-[16px]">
             A new way to gather, expand, and put to practice your skills.
           </p>
