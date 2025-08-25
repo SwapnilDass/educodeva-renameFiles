@@ -26,7 +26,6 @@ export default function Feature1() {
         </div>
       </div>
 
-      {/* Text */}
       <div className="pl-2 md:pl-3 max-w-[92%] text-left">
         <h3 className="text-white text-[20px] md:text-[22px] font-medium leading-tight tracking-[-0.5px]">
           Learn interactively.
