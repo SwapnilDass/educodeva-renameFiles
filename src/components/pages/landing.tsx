@@ -1,7 +1,7 @@
 import "../../styles/index.css";
 import Hero from "./landing/hero";
 import Events from "./landing/Events";
-import Learning from "c:/Users/Ruth/core/src/components/pages/landing/section-1/Learning"
+import Learning from "./landing/section-1/Learning"
 
 export default function Landing() {
   return (

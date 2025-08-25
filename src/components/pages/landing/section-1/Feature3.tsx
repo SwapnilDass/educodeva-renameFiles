@@ -1,7 +1,6 @@
 export default function Feature3() {
   return (
-    <div className="bg-[#1E1B38] border border-white/20 rounded-[10px] shadow-[0_18px_40px_rgba(0,0,0,0.35)] px-5 pt-3 pb -4 md:pt-6 md:pb-5 flex flex-col justify-start gap -3 md:gap-4 w-full overflow-hidden"
-    >
+    <div className="bg-[#1E1B38] border border-white/20 rounded-[10px] shadow-[0_18px_40px_rgba(0,0,0,0.35)] px-5 pt-3 pb-4 md:pt-6 md:pb-5 flex flex-col justify-start gap-3 md:gap-4 w-full overflow-hidden">
       
       <div className="pl-2 md:pl-3 max-w-[92%] text-left">
         <h3 className="text-white text-[20px] md:text-[22px] font-medium leading-tight tracking-[-0.5px]">
@@ -12,8 +11,8 @@ export default function Feature3() {
         </p>
       </div>
 
-      {/* Notifications*/}
-      <div className="flex justify-center items-center gap-0 mb-3">
+      {/* Notifications */}
+      <div className="flex justify-center items-center mb-3">
         <div className="relative w-[240px] md:w-[260px] lg:w-[280px]">
           <img
             src="/brand/png/Notifications.png"
