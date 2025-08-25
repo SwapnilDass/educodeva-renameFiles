@@ -30,7 +30,7 @@ export default function Feature1() {
         <h3 className="text-white text-[20px] md:text-[22px] font-medium leading-tight tracking-[-0.5px]">
           Learn interactively.
         </h3>
-        <p className="text-white/70 text-[14px] md:text-[15px] leading-relaxed">
+        <p className="mt-2 text-white/70 text-[14px] md:text-[15px] leading-relaxed">
           Codeva offers a new fun, entertaining, and effective way of presenting
           information, simply start your course, and enjoy the ride!
         </p>

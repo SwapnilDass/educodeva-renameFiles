@@ -6,7 +6,7 @@ export default function Feature3() {
         <h3 className="text-white text-[20px] md:text-[22px] font-medium leading-tight tracking-[-0.5px]">
           Compete & Reach the top!
         </h3>
-        <p className="mt-2 text-white/70 text-[13px] md:text-[14px] leading-relaxed">
+        <p className="mt-2 text-white/70 text-[14px] md:text-[15px] leading-relaxed">
           Any activity you do earns you XP, so gather as much as you can and compete in the leaderboard to win prizes!
         </p>
       </div>

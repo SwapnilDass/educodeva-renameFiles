@@ -33,7 +33,7 @@ export default function Feature2() {
         <h3 className="text-white text-[20px] md:text-[22px] font-medium leading-tight tracking-[-0.5px]">
           Find events & teams that fit you.
         </h3>
-        <p className="text-white/70 text-[14px] md:text-[15px] leading-relaxed">
+        <p className="mt-2 text-white/70 text-[14px] md:text-[15px] leading-relaxed">
           Whether you're into online events or in-person ones, we've got you covered, simply apply your filter, and watch the magic happen!
         </p>
       </div>
