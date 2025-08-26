@@ -14,7 +14,7 @@ export default function Feature1() {
           />
         </div>
 
-        <div className="relative w-[200px] md:w-[220px] lg:w-[250px] overflow-hidden -ml-2">
+        <div className="relative w-[200px] md:w-[220px] lg:w-[250px] overflow-hidden -ml-2 pt-[18px]">
           <img
             src="/brand/png/Group 21 2.png"
             alt="Phone bottom"
