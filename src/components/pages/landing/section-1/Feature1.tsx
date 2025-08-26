@@ -15,7 +15,7 @@ export default function Feature1() {
           />
         </div>
 
-        <div className="relative w-[200px] md:w-[220px] lg:w-[250px] overflow-hidden -ml-2 pt-[20px]">
+        <div className="relative w-[200px] md:w-[220px] lg:w-[250px] overflow-hidden -ml-2 pt-[18px]">
           <img
             src="/brand/png/Group 21 2.png"
             alt="Phone bottom"
@@ -30,8 +30,9 @@ export default function Feature1() {
         <h3 className="text-white text-[20px] md:text-[22px] font-medium leading-tight tracking-[-0.5px]">
           Learn interactively.
         </h3>
-        <p className="mt-3 text-white/70 text-[15px] md:text-[16px] leading-relaxed">
-          Codeva offers a new fun, entertaining, and effective way of presenting information, simply start your course, and enjoy the ride!
+        <p className="mt-2 text-white/70 text-[14px] md:text-[15px] leading-relaxed">
+          Codeva offers a new fun, entertaining, and effective way of presenting
+          information, simply start your course, and enjoy the ride!
         </p>
       </div>
     </div>
