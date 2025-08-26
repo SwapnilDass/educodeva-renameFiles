@@ -2,13 +2,11 @@ export default function Feature2() {
   return (
     <div
       className="
-        bg-[#1E1B38] border border-white/20 rounded-[10px]
-        px-5 pt-2 pb-4 md:px-6 md:pt-3 md:pb-5
-        flex flex-col justify-start gap-3 md:gap-4 w-full overflow-hidden
+        bg-[#1E1B38] border border-white/20 rounded-[10px] p-5 md:p-6 flex flex-col justify-between h-full w-full overflow-hidden
       "
     >
-      {/* Dashboard Preview */}
-      <div className="flex justify-center items-center gap-0">
+      {/* Dashboard */}
+      <div className="flex justify-center items-center gap-0 mb-4">
         <div className="relative w-[320px] md:w-[360px] lg:w-[400px]">
           <img
             src="/brand/png/Dashboard Preview.png"
@@ -16,10 +14,13 @@ export default function Feature2() {
             className="w-full h-auto object-contain"
           />
 
-          {/* Highlighted Box */}
-          <div className="absolute top-[34%] left-[32.75%] w-[15%] h-[32%] border-[1px] border-[#ED066B] rounded-[1px]" />
+          {/* Highlighted box*/}
+          <div
+            className="absolute top-[34%] left-[32.75%] w-[15%] h-[32%] border-[1px] border-[#ED066B] rounded-[1px]
+            "
+          />
 
-          {/* Cursor Icon */}
+          {/*Cursor icon */}
           <img
             src="/brand/svg/Hand (Pointing).svg"
             alt="Cursor"
