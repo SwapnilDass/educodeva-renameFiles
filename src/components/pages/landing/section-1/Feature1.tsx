@@ -5,6 +5,7 @@ export default function Feature1() {
     >
       {/* Phone Preview*/}
       <div className="flex justify-center items-center gap-0 mb-4">
+        {/*Top Half Phone */}
         <div className="relative w-[200px] md:w-[220px] lg:w-[250px] overflow-hidden">
           <img
             src="/brand/png/Group 21 1.png"
@@ -15,6 +16,7 @@ export default function Feature1() {
           />
         </div>
 
+        {/*Bottom Half Phone */}
         <div className="relative w-[200px] md:w-[220px] lg:w-[250px] overflow-hidden -ml-2 pt-[18px]">
           <img
             src="/brand/png/Group 21 2.png"
