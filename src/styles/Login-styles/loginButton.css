@@ -1,0 +1,20 @@
+.login-button {
+  @apply w-full max-w-[460px] h-[47px] rounded-[10px] bg-white text-black font-sans text-[14px] font-bold leading-normal px-4 py-3 mt-5 border-none cursor-pointer transition-transform transition-colors transition-shadow duration-200 ease-in-out;
+}
+
+.login-button:hover {
+  @apply bg-gray-300 text-gray-900 shadow-[0_4px_12px_rgba(0,0,0,0.25)];
+}
+
+.login-button:focus {
+  @apply outline-none;
+}
+
+.login-button:active {
+  @apply scale-95 bg-gray-400 text-black;
+}
+
+.login-button-clicked {
+  @apply scale-100;
+}
+

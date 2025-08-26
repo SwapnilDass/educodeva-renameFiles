@@ -1,0 +1,8 @@
+.sub-greeting-container {
+  @apply flex justify-center w-full max-w-[1800px] px-5;
+}
+
+.sub-greeting-text {
+  @apply font-sans text-[23px] font-normal leading-[1.2] text-white/80 
+         text-center w-full tracking-[1px];
+}

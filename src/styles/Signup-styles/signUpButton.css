@@ -1,0 +1,23 @@
+.signUp-button {
+  @apply w-full max-w-[460px] h-[47px] rounded-[10px] bg-white text-black
+         font-sans text-[14px] font-bold leading-normal px-4 py-3
+         mt-[1.25rem] mb-[3.4rem] border-none cursor-pointer
+         transition-transform transition-colors transition-shadow duration-200 ease-in-out;
+}
+
+.signUp-button:hover {
+  @apply bg-gray-300 text-gray-900 shadow-[0_4px_12px_rgba(0,0,0,0.25)];
+}
+
+.signUp-button:focus {
+  @apply outline-none;
+}
+
+.signUp-button:active {
+  @apply scale-95 bg-gray-400 text-black;
+}
+
+.signUp-button-clicked {
+  @apply scale-100;
+}
+
