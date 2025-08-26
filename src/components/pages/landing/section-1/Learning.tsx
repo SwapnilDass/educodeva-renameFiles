@@ -8,7 +8,7 @@ import Branding from './Branding';
 
 export default function Learning() {
   return (
-    <section className=" bg-[#050222] pt-0 pb-10 px-4 md:px-8 lg:px-12 xl:px-[64px] 2xl:px-[80px] font-inter">
+    <section className=" bg-[#050222] pt-5 pb-10 px-4 md:px-8 lg:px-12 xl:px-[64px] 2xl:px-[80px] font-inter">
       <SectionIntro />
 
       {/* Feature 1 & 2 */}
