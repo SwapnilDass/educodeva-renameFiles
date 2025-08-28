@@ -40,7 +40,7 @@ export default function TestimonialCard({
 
         {/* Body text and (optional) image*/}
         <div className="space-y-4">
-          <p className="text-xs text-gray-300">{body}</p>
+          <p className="text-xs text-gray-300 line-clamp-3">{body}</p>
           {image !== undefined && (
             <div className="h-[13.75rem] w-full rounded-xl bg-white">
               {image && <img src={image}></img>}
