@@ -5,23 +5,23 @@ interface TestimonialCardProps extends HTMLAttributes<HTMLElement> {
   username: string;
   handle: string;
   body: string;
-  pfp?: string;
-  image?: string;
+  pfpUrl?: string;
+  imageUrl?: string;
 }
 
 export default function TestimonialCard({
   username,
   handle,
   body,
-  pfp,
-  image,
+  pfpUrl,
+  imageUrl,
   className,
   ...props
 }: TestimonialCardProps) {
   return (
     <article
       className={clsx(
-        "max-w-[39rem] break-inside-avoid rounded-xl border-[1.6px] border-white/[8%] bg-white/10 px-5 py-4",
+        "max-w-xl break-inside-avoid rounded-xl border-[1.6px] border-white/[8%] bg-white/10 px-5 py-4",
         className,
       )}
       {...props}
@@ -30,7 +30,7 @@ export default function TestimonialCard({
         {/* User information (pfp, username, handle) */}
         <div className="flex items-center gap-4">
           <div className="h-12 w-12 rounded-full bg-white">
-            {pfp && <img src={pfp}></img>}
+            {pfpUrl && <img src={pfpUrl}></img>}
           </div>
           <div>
             <p className="text-sm">{username}</p>
@@ -41,9 +41,9 @@ export default function TestimonialCard({
         {/* Body text and (optional) image*/}
         <div className="space-y-4">
           <p className="text-xs text-gray-300">{body}</p>
-          {image !== undefined && (
+          {imageUrl !== undefined && (
             <div className="h-[13.75rem] w-full rounded-xl bg-white">
-              {image && <img src={image}></img>}
+              {imageUrl && <img src={imageUrl}></img>}
             </div>
           )}
         </div>
