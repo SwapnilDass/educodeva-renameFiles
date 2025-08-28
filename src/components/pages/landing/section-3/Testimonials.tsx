@@ -12,7 +12,7 @@ export default function Testimonials({
 }: TestimonialsProps) {
   return (
     <section
-      className={clsx("flex flex-col items-center bg-[#050222]", className)}
+      className={clsx("flex flex-col items-center bg-inherit", className)}
       {...props}
     >
       <div className="w-[87%] max-w-fit sm:w-[80%]">
