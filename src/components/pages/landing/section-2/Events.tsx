@@ -13,7 +13,7 @@ export default function Events({ className, ...props }: EventsProps) {
       className={clsx("flex flex-col items-center bg-inherit", className)}
       {...props}
     >
-      <div className="w-[87%] max-w-fit sm:w-[80%]">
+      <div className="w-[87%] max-w-fit flex flex-col items-center justify-center sm:w-full">
         <SectionHeader
           badgeIcon={<CalendarSvg />}
           title="Educative events,"
@@ -21,7 +21,7 @@ export default function Events({ className, ...props }: EventsProps) {
           description="Creating a more globally accessible way of participating, organizing, and managing events. All through one Platform."
         />
 
-        <EventGallery />
+        <EventGallery className="w-[93%]" />
         <EventHighlights />
       </div>
     </section>

@@ -11,7 +11,7 @@ export default function EventHighlight({
     <div className={clsx("mt-20 md:mt-28 lg:mt-32", className)} {...props}>
       <h2 className="text-center text-lg font-medium sm:text-xl md:text-[1.45rem] lg:text-[1.7rem]">
         Think it's too good to be true?{" "}
-        <span className="bg-gradient-to-b from-[#ED066B] from-20% to-white to-[92%] bg-clip-text text-transparent">
+        <span className="bg-gradient-to-b cursor-pointer from-[#ED066B] from-20% to-white to-[92%] bg-clip-text text-transparent">
           Check it out!
         </span>
       </h2>
