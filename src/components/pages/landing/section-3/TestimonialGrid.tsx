@@ -2,6 +2,7 @@ import { useEffect, useState, HTMLAttributes } from "react";
 import TestimonialCard from "./TestimonialCard";
 import clsx from "clsx";
 import BlurFade from "@/components/ui/blur-fade";
+import MasonryGrid from "@/components/shared/MasonryGrid";
 
 interface TestimonialGrid extends HTMLAttributes<HTMLDivElement> {}
 
@@ -116,7 +117,7 @@ export default function TestimonialGrid({
 
   return (
     <div className={clsx("relative flex justify-center", className)} {...props}>
-      <div className="h-fit w-fit columns-1 gap-x-[1.375rem] space-y-[1.625rem] md:columns-2 lg:columns-3">
+      <MasonryGrid className="gap-x-[1.25rem] space-y-[1.625rem]">
         {userTestimonials
           .slice(0, visibleCount)
           .map((userTestimonial, index) => (
@@ -127,7 +128,7 @@ export default function TestimonialGrid({
               />
             </BlurFade>
           ))}
-      </div>
+      </MasonryGrid>
 
       {/* Gradient overlay */}
       <div
