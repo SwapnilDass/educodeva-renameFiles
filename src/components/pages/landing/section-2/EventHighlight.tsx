@@ -1,19 +1,18 @@
 import { HTMLAttributes } from "react";
 import clsx from "clsx";
+import GradientText from "@/components/shared/GradientText";
 
-interface EventHighlightsProps extends HTMLAttributes<HTMLDivElement> {}
+interface EventHighlightProps extends HTMLAttributes<HTMLDivElement> {}
 
 export default function EventHighlight({
   className,
   ...props
-}: EventHighlightsProps) {
+}: EventHighlightProps) {
   return (
     <div className={clsx("mt-20 md:mt-28 lg:mt-32", className)} {...props}>
       <h2 className="text-center text-lg font-medium sm:text-xl md:text-[1.45rem] lg:text-[1.7rem]">
         Think it's too good to be true?{" "}
-        <span className="bg-gradient-to-b cursor-pointer from-[#ED066B] from-20% to-white to-[92%] bg-clip-text text-transparent">
-          Check it out!
-        </span>
+        <GradientText className="whitespace-nowrap">Check it out!</GradientText>
       </h2>
 
       <div className="relative mx-auto mt-12 flex max-w-3xl items-center justify-center">

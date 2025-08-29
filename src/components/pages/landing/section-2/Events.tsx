@@ -3,7 +3,8 @@ import CalendarSvg from "./CalendarSvg";
 import EventGallery from "./EventGallery";
 import { HTMLAttributes } from "react";
 import clsx from "clsx";
-import EventHighlights from "./EventHighlights";
+import EventHighlight from "./EventHighlight";
+import SectionContainer from "@/components/shared/SectionContainer";
 
 interface EventsProps extends HTMLAttributes<HTMLElement> {}
 
@@ -13,7 +14,7 @@ export default function Events({ className, ...props }: EventsProps) {
       className={clsx("flex flex-col items-center bg-inherit", className)}
       {...props}
     >
-      <div className="w-[87%] max-w-fit flex flex-col items-center justify-center sm:w-full">
+      <SectionContainer>
         <SectionHeader
           badgeIcon={<CalendarSvg />}
           title="Educative events,"
@@ -21,9 +22,9 @@ export default function Events({ className, ...props }: EventsProps) {
           description="Creating a more globally accessible way of participating, organizing, and managing events. All through one Platform."
         />
 
-        <EventGallery className="w-[93%]" />
-        <EventHighlights />
-      </div>
+        <EventGallery />
+        <EventHighlight />
+      </SectionContainer>
     </section>
   );
 }

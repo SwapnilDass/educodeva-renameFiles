@@ -1,5 +1,6 @@
 import { HTMLAttributes } from "react";
 import clsx from "clsx";
+import BlurFade from "@/components/ui/blur-fade";
 
 interface EventGallery extends HTMLAttributes<HTMLDivElement> {}
 
@@ -52,12 +53,9 @@ export default function EventGallery({ className, ...props }: EventGallery) {
     <div className={clsx("flex justify-center", className)} {...props}>
       <div className="columns-1 gap-x-[1.375rem] space-y-[1.625rem] md:columns-2 lg:columns-3">
         {galleryPhotos.map((entry, index) => (
-          <img
-            key={index}
-            src={entry.url}
-            alt={entry.alt}
-            className="w-full max-w-lg"
-          />
+          <BlurFade yOffset={0} key={index} inView>
+            <img src={entry.url} alt={entry.alt} className="w-full max-w-lg" />
+          </BlurFade>
         ))}
       </div>
     </div>
