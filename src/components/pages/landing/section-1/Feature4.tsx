@@ -2,8 +2,7 @@ import SectionText from "./SectionText";
 
 export default function Feature4() {
   return (
-    <div className="max-w-xl break-inside-avoid space-y-4 rounded-xl border-[1.6px] border-white/[8%] bg-white/10 p-6 md:p-8">
-      {/* Text */}
+    <div className="max-w-xl break-inside-avoid space-y-4 rounded-xl border-[1.6px] border-white/[8%] bg-white/10 p-6 !pb-0 md:p-8">
       <SectionText
         className="text-center"
         heading="Learn what describes you."
