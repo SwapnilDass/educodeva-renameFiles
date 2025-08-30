@@ -1,26 +1,22 @@
 export default function Feature3() {
   return (
-    <div className="bg-[#1E1B38] border border-white/20 rounded-[10px] shadow-[0_18px_40px_rgba(0,0,0,0.35)] px-5 pt-3 pb-4 md:pt-6 md:pb-5 flex flex-col justify-start gap-3 md:gap-4 w-full overflow-hidden">
-      
-      <div className="pl-2 md:pl-3 max-w-[92%] text-left">
-        <h3 className="text-white text-[20px] md:text-[22px] font-medium leading-tight tracking-[-0.5px]">
+    <div className="max-w-xl break-inside-avoid space-y-8 rounded-xl border-[1.6px] border-white/[8%] bg-white/10 p-6 md:p-8">
+      <div className="max-w-prose space-y-2 text-left">
+        <h3 className="text-xl font-medium leading-tight tracking-tighter text-white md:text-2xl">
           Compete & Reach the top!
         </h3>
-        <p className="mt-2 text-white/70 text-[14px] md:text-[15px] leading-relaxed">
-          Any activity you do earns you XP, so gather as much as you can and compete in the leaderboard to win prizes!
+        <p className="text-base leading-relaxed text-white/70">
+          Any activity you do earns you XP, so gather as much as you can and
+          compete in the leaderboard to win prizes!
         </p>
       </div>
 
-      {/* Notifications */}
-      <div className="flex justify-center items-center mb-3">
-        <div className="relative w-[240px] md:w-[260px] lg:w-[280px]">
-          <img
-            src="/brand/png/Notifications.png"
-            alt="Notifications"
-            className="w-full h-auto object-contain"
-          />
-        </div>
-      </div>
+      {/* Notifications Image */}
+      <img
+        src="/landing/notifications.png"
+        alt="Notifications"
+        className="h-auto w-full object-contain"
+      />
     </div>
   );
 }
