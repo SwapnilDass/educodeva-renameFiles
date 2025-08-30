@@ -3,7 +3,7 @@ import { ArrowRightIcon } from "@radix-ui/react-icons";
 ("use client");
 
 import { cn } from "@/lib/utils";
-import DotPattern from "@/components/ui/dot-pattern";
+import CurvyBoxPattern, { DotPattern } from "@/components/ui/dot-pattern"; // Changed import
 import { BorderBeam } from "@/components/ui/border-beam";
 import ShimmerButton from "@/components/ui/shimmer-button";
 import NumberTicker from "@/components/ui/number-ticker";
@@ -18,7 +18,7 @@ export default function Header() {
       className="relative flex h-fit min-h-screen max-[450px]:min-h-[100vh]
       rounded-xl overflow-hidden flex-col items-center justify-center gap-y-16
       pb-28 pt-8
-      [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#5F2BAF_100%)]
+      [background:radial-gradient(circle_at_50%_10%,rgba(0,0,0,0.35)_0%,rgba(0,0,0,0.73)_50%,rgba(81,21,140,1)_100%)]
       max-[400px]:gap-y-16 sm:pb-32 md:gap-y-24 md:shadow-xl lg:pb-36"
     >
       {/* Navbar moved slightly higher */}
@@ -109,12 +109,19 @@ export default function Header() {
       </div>
 
       <DotPattern
-        className={cn(
-          "[mask-image:radial-gradient(60rem_circle_at_center,white,transparent)]",
-          "z-0"
-        )}
-      />
+      className={cn(
+        // First mask: radial (center bright → edges transparent)
+        "[mask-image:radial-gradient(65rem_circle_at_center,white,rgba(0,0,0,0)_10%)]",
+
+        // Second mask: horizontal fade (sides transparent)
+        "[mask-image:linear-gradient(to_right,transparent,white_50%,white_50%,transparent)]",
+
+        // Combine the two masks together
+        "[mask-composite:intersect] [mask-repeat:no-repeat] [mask-position:center]",
+
+        "z-0"
+      )}
+    />
     </section>
   );
 }
-
