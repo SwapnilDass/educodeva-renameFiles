@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import { HTMLAttributes } from "react";
 import SectionBadge from "./SectionBadge";
+import GradientText from "./GradientText";
 
 interface SectionHeaderProps extends HTMLAttributes<HTMLElement> {
   badgeIcon: React.ReactNode;
@@ -33,10 +34,7 @@ export default function SectionHeader({
         <div className="flex items-center gap-6">
           <SectionBadge icon={badgeIcon} className="sm:hidden" />
           <h2 className="text-lg font-medium sm:text-xl md:text-[1.45rem] lg:text-[1.7rem]">
-            {title}{" "}
-            <span className="bg-gradient-to-b from-[#ED066B] from-20% to-white to-[92%] bg-clip-text text-transparent">
-              {highlight}
-            </span>
+            {title} <GradientText>{highlight}</GradientText>
           </h2>
         </div>
 

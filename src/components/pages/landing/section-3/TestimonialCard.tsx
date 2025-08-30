@@ -21,7 +21,7 @@ export default function TestimonialCard({
   return (
     <article
       className={clsx(
-        "max-w-xl break-inside-avoid rounded-xl border-[1.6px] border-white/[8%] bg-white/10 px-5 py-4",
+        "max-w-xl break-inside-avoid rounded-xl border-[1.76px] border-white/[8%] bg-white/10 p-5",
         className,
       )}
       {...props}
