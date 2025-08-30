@@ -19,7 +19,7 @@ export default function Learning() {
         />
 
         <div className="space-y-[1.375rem]">
-          <div className="mt-0 grid grid-cols-1 gap-4 md:mt-0 md:grid-cols-2 md:gap-5 lg:gap-6">
+          <div className="columns-1 gap-x-[1.375rem] space-y-[1.625rem] md:columns-2">
             <Feature1 />
             <Feature2 />
           </div>
