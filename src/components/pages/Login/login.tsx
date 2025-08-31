@@ -1,22 +1,19 @@
 import React from "react";
-import Logo from "./logo";
-import Greeting from "./greeting";
 import EmailField from "./EmailField";
-import PassField from "./PassField";
-import LoginButton from "./loginButton";
-import SignUp from "./signUp";
 import OrDivider from "./OrDivider";
+import PassField from "./PassField";
 import SocialButtons from "./SocialButtons";
 import Footer from "./footer";
-import "../../../styles/Login-styles/login.css";
-
-import "../../../styles/Login-styles/login.css"; // Import CSS file
+import Greeting from "./greeting";
+import LoginButton from "./loginButton";
+import Logo from "./logo";
+import SignUp from "./signUp";
 
 const Login: React.FC = () => {
   return (
-    <div className="auth-page">
+    <div className="flex h-screen items-center justify-center bg-[#050222]">
       {/*Gray Layout*/}
-      <div className="auth-container">
+      <div className="flex h-[780px] w-full min-w-[600px] max-w-[600px] flex-col items-center rounded-[25px] border border-white/20 bg-gray-800/50 p-6 shadow-md backdrop-blur-[15px]">
         {/* Logo at the top */}
         <Logo />
 

@@ -1,5 +1,3 @@
-//Reusing Codes.
-
 import React from "react";
 import EmailField from "../Login/EmailField";
 import OrDivider from "../Login/OrDivider";
@@ -10,13 +8,11 @@ import Logo from "../Login/logo";
 import SignUpButton from "./signup-button";
 import Greeting from "./signup-greeting";
 
-import "@/styles/Login-styles/login.css";
-
 const Signup: React.FC = () => {
   return (
-    <div className="auth-page">
+    <div className="flex h-screen items-center justify-center bg-[#050222]">
       {/* Transparent Grey Container */}
-      <div className="auth-container">
+      <div className="flex h-[780px] w-full min-w-[600px] max-w-[600px] flex-col items-center rounded-[25px] border border-white/20 bg-gray-800/50 p-6 shadow-md backdrop-blur-[15px]">
         {/* Logo */}
         <Logo />
 

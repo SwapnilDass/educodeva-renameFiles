@@ -1,21 +1,21 @@
 import React, { useState } from "react";
-import "../../../styles/Login-styles/PassField.css";
 
 const PassField: React.FC = () => {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
-    <div className="pass-field">
-      <label htmlFor="pass" className="pass-label">
+    <div className="mx-auto mt-6 flex w-full max-w-[460px] flex-col">
+      <label htmlFor="pass" className="mb-2 text-sm font-medium text-white/90">
         Password
       </label>
-      <div className="pass-input-wrapper">
+      <div className="relative flex h-12 w-full items-center gap-3 rounded-xl border border-white/20 bg-white/10 px-4 transition-all focus-within:ring-2 focus-within:ring-purple-400/60 hover:border-white/40">
         {/* Lock Icon */}
         <svg
           width="24"
           height="24"
           viewBox="0 0 73 84"
           fill="none"
+          className="h-5 w-5 shrink-0 text-white/60"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
@@ -30,20 +30,21 @@ const PassField: React.FC = () => {
           type={showPassword ? "text" : "password"}
           id="pass"
           placeholder="Enter your password ..."
-          className="pass-input"
+          className="h-full flex-1 border-0 bg-transparent text-white placeholder-white/50 outline-none"
         />
 
         {/* Eye Icon (clickable) */}
         <button
           type="button"
           onClick={() => setShowPassword((prev) => !prev)}
-          className="eye-button"
+          className="absolute left-[89%] flex items-center justify-center"
         >
           <svg
             width="75"
             height="58"
             viewBox="0 0 75 58"
             fill="none"
+            className="h-5 w-5 text-white/60"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
