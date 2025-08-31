@@ -2,15 +2,15 @@ import { useEffect, useState, HTMLAttributes } from "react";
 import TestimonialCard from "./TestimonialCard";
 import clsx from "clsx";
 import BlurFade from "@/components/ui/blur-fade";
+import MasonryGrid from "@/components/shared/MasonryGrid";
 
-interface TestimonialGridProps extends HTMLAttributes<HTMLDivElement> {}
+interface TestimonialGrid extends HTMLAttributes<HTMLDivElement> {}
 
 export default function TestimonialGrid({
   className,
   ...props
-}: TestimonialGridProps) {
-  // User testimonials to be displayed
-  const entries = [
+}: TestimonialGrid) {
+  const userTestimonials = [
     {
       username: "Steven Tey",
       handle: "@steventey",
@@ -65,7 +65,7 @@ export default function TestimonialGrid({
       username: "Steven Tey",
       handle: "@steventey",
       body: "Looking for a way to learn coding, math, physics, and more, all through the comfort of your home? Codeva's what you need. Check it out right now and gain expertise in what YOU like. https://codeva.xyz/",
-      image: "", // This can be replaced by a url
+      imageUrl: "", // This can be replaced by a url
     },
 
     {
@@ -84,7 +84,7 @@ export default function TestimonialGrid({
   const [showAll, setShowAll] = useState<boolean>(false);
 
   const handleShowMore = () => {
-    setVisibleCount(entries.length); // Show all entries when show more is pressed
+    setVisibleCount(userTestimonials.length); // Show all entries when show more is pressed
     setShowAll(true); // Disable show more button and related effects
   };
 
@@ -116,42 +116,41 @@ export default function TestimonialGrid({
   }, [showAll]);
 
   return (
-    <div className={clsx("relative flex", className)} {...props}>
-      <div className="columns-1 gap-x-[1.375rem] space-y-[1.625rem] md:columns-2 lg:columns-3">
-        {entries.slice(0, visibleCount).map((entry, index) => (
-          <BlurFade delay={0.5} inView>
-            <TestimonialCard
-              key={index}
-              className="animate-fade-in"
-              {...entry}
-            />
-          </BlurFade>
-        ))}
+    <div className={clsx("relative flex justify-center", className)} {...props}>
+      <MasonryGrid className="gap-x-[1.25rem] space-y-[1.625rem]">
+        {userTestimonials
+          .slice(0, visibleCount)
+          .map((userTestimonial, index) => (
+            <BlurFade yOffset={0} key={index} inView>
+              <TestimonialCard
+                className="animate-fade-in"
+                {...userTestimonial}
+              />
+            </BlurFade>
+          ))}
+      </MasonryGrid>
 
-        {/* Gradient overlay */}
-        <div
-          className={clsx(
-            "pointer-events-none absolute bottom-0 left-0 right-0 z-10 h-full bg-gradient-to-t from-[#050222] from-[8%] via-transparent via-[70%] to-transparent transition-opacity duration-200",
-            showAll ? "opacity-0" : "opacity-100", // Animation requires gradient div to remain in DOM
-          )}
-        />
-
-        {!showAll && (
-          <>
-            {/* Button overlay */}
-            <div className="absolute bottom-6 left-1/2 z-20 flex w-full -translate-x-1/2 justify-center">
-              <button
-                className="flex-shrink-0 overflow-hidden rounded-lg border border-[#39374E] bg-gradient-to-b from-[#2C2944] to-[#1D1B36] px-[3.875rem] py-[0.75rem] font-medium text-white transition-opacity duration-200 hover:opacity-90 active:opacity-80"
-                onClick={handleShowMore}
-              >
-                <span className="relative text-clip bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent">
-                  Show More
-                </span>
-              </button>
-            </div>
-          </>
+      {/* Gradient overlay */}
+      <div
+        className={clsx(
+          "pointer-events-none absolute bottom-0 left-0 right-0 z-10 h-full bg-gradient-to-t from-[#050222] from-[8%] via-transparent via-[70%] to-transparent transition-opacity duration-200",
+          showAll ? "opacity-0" : "opacity-100", // Animation requires gradient div to remain in DOM
         )}
-      </div>
+      />
+
+      {/* Button overlay */}
+      {!showAll && (
+        <div className="absolute bottom-6 left-1/2 z-20 flex w-full -translate-x-1/2 justify-center">
+          <button
+            className="flex-shrink-0 overflow-hidden rounded-lg border border-[#39374E] bg-gradient-to-b from-[#2C2944] to-[#1D1B36] px-[3.875rem] py-[0.75rem] font-medium text-white transition-opacity duration-200 hover:opacity-90 active:opacity-80"
+            onClick={handleShowMore}
+          >
+            <span className="relative text-clip bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent">
+              Show More
+            </span>
+          </button>
+        </div>
+      )}
     </div>
   );
 }

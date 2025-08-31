@@ -3,6 +3,7 @@ import { HTMLAttributes } from "react";
 import PlaneSvg from "./PlaneSvg";
 import TestimonialGrid from "./TestimonialGrid";
 import clsx from "clsx";
+import SectionContainer from "@/components/shared/SectionContainer";
 
 interface TestimonialsProps extends HTMLAttributes<HTMLElement> {}
 
@@ -12,10 +13,10 @@ export default function Testimonials({
 }: TestimonialsProps) {
   return (
     <section
-      className={clsx("flex flex-col items-center bg-[#050222]", className)}
+      className={clsx("flex flex-col items-center bg-inherit", className)}
       {...props}
     >
-      <div className="w-[87%] max-w-fit sm:w-[80%]">
+      <SectionContainer>
         <SectionHeader
           badgeIcon={<PlaneSvg />}
           title="Bringing students together,"
@@ -25,7 +26,7 @@ export default function Testimonials({
 
         {/* User reviews/testimonials */}
         <TestimonialGrid />
-      </div>
+      </SectionContainer>
     </section>
   );
 }
