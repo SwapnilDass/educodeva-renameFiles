@@ -22,7 +22,7 @@ export default function Header() {
       max-[400px]:gap-y-16 sm:pb-32 md:gap-y-24 md:shadow-xl lg:pb-36"
     >
       {/* Navbar moved slightly higher */}
-      <div className="-translate-y-14 w-full flex justify-center">
+      <div className="max-md:-translate-y-14 w-full flex justify-center">
         <Navbar />
       </div>
 

@@ -45,11 +45,11 @@ export default function Navbar() {
         <img
           src="../../../brand/png/Branding.png"
           alt="Codeva"
-          className="h-[45%]"
+          className="h-[35%]"
         />
 
         {/* Hamburger Menu */}
-        <div className="flex h-[60%] w-10 cursor-pointer items-center justify-center">
+        <div className="flex h-[40%] w-10 cursor-pointer items-center justify-center">
           <FontAwesomeIcon
             icon={faBars}
             className="h-full w-auto text-white/80"
