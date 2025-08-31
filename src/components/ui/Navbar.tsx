@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons/faBars";
 import { Link } from "react-router-dom";
+import "../../styles/Navbar-styles/Navbar.css"
 
 export default function Navbar() {
   return (
@@ -15,12 +16,12 @@ export default function Navbar() {
         />
 
         {/* Navigation Icons */}
-        <div className="flex h-full items-center justify-center gap-4">
+        <div className="nav-cont flex h-full items-center justify-center gap-4">
           {[1, 2, 3, 4, 5].map((num) => (
             <a
               key={num}
               href="/"
-              className="flex aspect-square h-[60%] cursor-pointer flex-col items-center justify-center gap-1 rounded-md bg-[#C2A6FF] bg-opacity-30"
+              className="nav-link flex aspect-square h-[60%] cursor-pointer flex-col items-center justify-center gap-1 rounded-md bg-[#C2A6FF] bg-opacity-30"
             >
               <img
                 src={`../../../nav/nav_${num}.png`}
@@ -33,7 +34,7 @@ export default function Navbar() {
 
         {/* Get Started Button → Login */}
         <Link to="/login" className="flex h-full items-center justify-center">
-          <button className="h-[70%] w-40 rounded-lg bg-white/70 text-black transition-all duration-500 hover:bg-white max-md:w-28">
+          <button className="h-[70%] w-40 rounded-lg hover:bg-white/70 text-black transition-all duration-500 bg-white max-md:w-28">
             Get Started
           </button>
         </Link>
