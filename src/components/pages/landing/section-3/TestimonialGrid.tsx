@@ -91,11 +91,11 @@ export default function TestimonialGrid({
   useEffect(() => {
     const getVisibleCount = () => {
       if (window.innerWidth < 768) {
-        return 4; // For small screens
+        return 6; // For small screens
       } else if (window.innerWidth < 1024) {
-        return 7; // For medium screens (md: 768px and up)
+        return 9; // For medium screens (md: 768px and up)
       } else {
-        return 13; // For large screens (lg: 1024px and up)
+        return 15; // For large screens (lg: 1024px and up)
       }
     };
 
