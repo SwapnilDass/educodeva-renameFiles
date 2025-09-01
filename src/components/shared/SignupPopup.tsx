@@ -41,7 +41,7 @@ const SingupPopup: React.FC<SignupPopupProps> = ({ isOpen, onClose }) => {
 
           {/* Modal wrapper with padding for top breathing room */}
           <motion.div
-            className="relative z-10 mx-4 my-8 flex max-h-[90vh] w-full max-w-md flex-col items-center overflow-y-auto rounded-2xl border border-white/20 bg-gray-900/90 p-6 shadow-2xl"
+            className="relative z-10 mx-auto my-8 flex max-h-[90vh] w-full max-w-[602px] flex-col items-center overflow-y-hidden rounded-2xl border border-white/20 bg-gray-900/90 p-6 shadow-2xl"
             initial={{ opacity: 0, scale: 0.95, y: -20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: -20 }}
@@ -72,9 +72,8 @@ const SignupForm = () => {
         <Logo />
       </div>
 
-      <Greeting />
-
-      <div className="w-full space-y-4">
+      <div className="flex flex-col items-center">
+        <Greeting />
         <EmailField />
         <PassField />
         <SignupButton />
@@ -90,7 +89,7 @@ const SignupForm = () => {
 
 const AlreadyMember = () => {
   return (
-    <div className="mt-[0.25rem] flex flex-wrap items-center justify-center gap-[0.5rem]">
+    <div className="-mt-[2rem] mb-[1rem] flex flex-wrap items-center justify-center gap-[0.5rem]">
       {/* Left Text */}
       <span
         className="text-center font-sans text-[12px] font-medium text-[rgba(224,224,224,0.74)]"
@@ -104,7 +103,6 @@ const AlreadyMember = () => {
         to="/login"
         className="font-feature-settings-['ss02'_on] cursor-pointer border-none bg-gradient-to-r from-[#9a58ff] via-[#ed066b] to-[#9a58ff] bg-clip-text font-sans text-[12px] font-semibold text-transparent transition-transform duration-200"
         style={{
-          lineHeight: "50px",
           WebkitBackgroundClip: "text",
           WebkitTextFillColor: "transparent",
           backgroundClip: "text",
