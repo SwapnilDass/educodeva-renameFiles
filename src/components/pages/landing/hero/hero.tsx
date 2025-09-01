@@ -1,21 +1,14 @@
-import { ArrowRightIcon } from "@radix-ui/react-icons";
-
-("use client");
-
-import { cn } from "@/lib/utils";
-import DotPattern from "@/components/ui/dot-pattern";
-import { BorderBeam } from "@/components/ui/border-beam";
-import ShimmerButton from "@/components/ui/shimmer-button";
-import NumberTicker from "@/components/ui/number-ticker";
-import ShinyButton from "@/components/ui/shiny-button";
 import BlurFade from "@/components/ui/blur-fade";
+import { BorderBeam } from "@/components/ui/border-beam";
+import DotPattern from "@/components/ui/dot-pattern";
 import Navbar from "@/components/ui/Navbar";
-import Partners from "../partners/Partners";
+import ShinyButton from "@/components/ui/shiny-button";
+import { cn } from "@/lib/utils";
 
-export default function Header() {
+export default function Hero() {
   return (
-    <section className="relative flex h-fit min-h-screen max-[450px]:min-h-[100vh] rounded-xl overflow-hidden flex-col items-center justify-center gap-y-16 pb-28 pt-8 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#5F2BAF_100%)] max-[400px]:gap-y-16 sm:pb-32 md:gap-y-24 md:shadow-xl lg:pb-36">
-      < Navbar />
+    <section className="relative flex h-fit min-h-screen flex-col items-center justify-center gap-y-16 overflow-hidden rounded-xl pb-28 pt-8 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#5F2BAF_100%)] max-[450px]:min-h-[100vh] max-[400px]:gap-y-16 sm:pb-32 md:gap-y-24 md:shadow-xl lg:pb-36">
+      <Navbar />
 
       <div className="flex flex-col items-center justify-center gap-y-6 text-center">
         <BlurFade delay={0.5} inView>
@@ -97,15 +90,12 @@ export default function Header() {
         </div>
       </div>
 
-      
-
       <DotPattern
         className={cn(
           "[mask-image:radial-gradient(60rem_circle_at_center,white,transparent)]",
           "z-0",
         )}
       />
-      
     </section>
   );
 }

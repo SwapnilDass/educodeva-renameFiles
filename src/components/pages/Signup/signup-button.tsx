@@ -1,11 +1,13 @@
 import clsx from "clsx";
 import React, { useState } from "react";
 
-interface LoginButtonProps {
+interface SignupButtonProps {
   label?: string;
 }
 
-const LoginButton: React.FC<LoginButtonProps> = ({ label = "Sign up" }) => {
+const SignupButtonProps: React.FC<SignupButtonProps> = ({
+  label = "Sign up",
+}) => {
   const buttonStyles =
     "w-full max-w-[460px] h-[47px] rounded-[10px] bg-white text-black font-sans text-[14px] font-bold leading-normal px-4 py-3 mt-[1.25rem] mb-[3.4rem] border-none cursor-pointer transition-transform transition-colors transition-shadow duration-200 ease-in-out";
   const [clicked, setClicked] = useState(false);
@@ -24,4 +26,4 @@ const LoginButton: React.FC<LoginButtonProps> = ({ label = "Sign up" }) => {
   );
 };
 
-export default LoginButton;
+export default SignupButtonProps;
