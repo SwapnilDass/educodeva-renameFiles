@@ -1,9 +1,18 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import SingupPopup from "@/components/shared/SignupPopup";
 import { faBars } from "@fortawesome/free-solid-svg-icons/faBars";
-import { Link } from "react-router-dom";
-import "../../styles/Navbar-styles/Navbar.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleShowPopup = (
+    e: React.MouseEvent<HTMLButtonElement, MouseEvent>,
+  ) => {
+    e.preventDefault();
+    setIsOpen((prev) => !prev);
+  };
+
   return (
     <div className="z-50 flex h-[50px] w-screen items-center justify-center">
       {/* Desktop / Tablet Navbar */}
@@ -16,12 +25,12 @@ export default function Navbar() {
         />
 
         {/* Navigation Icons */}
-        <div className="nav-cont flex h-full items-center justify-center gap-4">
+        <div className="flex h-full items-center justify-center gap-4 opacity-100 transition-opacity duration-300 hover:opacity-50">
           {[1, 2, 3, 4, 5].map((num) => (
             <a
               key={num}
               href="/"
-              className="nav-link flex aspect-square h-[60%] cursor-pointer flex-col items-center justify-center gap-1 rounded-md bg-[#C2A6FF] bg-opacity-30"
+              className="flex aspect-square h-[60%] cursor-pointer flex-col items-center justify-center gap-1 rounded-md bg-[#C2A6FF] bg-opacity-30 hover:opacity-100"
             >
               <img
                 src={`../../../nav/nav_${num}.png`}
@@ -33,11 +42,12 @@ export default function Navbar() {
         </div>
 
         {/* Get Started Button → Login */}
-        <Link to="/login" className="flex h-full items-center justify-center">
-          <button className="h-[70%] w-40 rounded-lg hover:bg-white/70 text-black transition-all duration-500 bg-white max-md:w-28">
-            Get Started
-          </button>
-        </Link>
+        <button
+          onClick={handleShowPopup}
+          className="h-[70%] w-40 rounded-lg bg-white text-black transition-all duration-500 hover:bg-white/70 max-md:w-28"
+        >
+          Get Started
+        </button>
       </div>
 
       {/* Mobile Navbar */}
@@ -58,6 +68,8 @@ export default function Navbar() {
           />
         </div>
       </div>
+
+      <SingupPopup isOpen={isOpen} onClose={() => setIsOpen(false)} />
     </div>
   );
 }

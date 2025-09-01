@@ -1,11 +1,13 @@
 import React from "react";
-import "../../../styles/Login-styles/SocialButtons.css";
 
 const SocialButtons: React.FC = () => {
+  const buttonStyle =
+    "mt-[1rem] flex h-[47px] w-full max-w-[460px] cursor-pointer items-center justify-center gap-[0.75rem] rounded-[10px] border-[2px] border-[rgba(187,187,187,0.44)] bg-transparent px-[1rem] py-[0.75rem] font-sans text-[14px] font-bold leading-normal text-white shadow-none transition duration-200 ease-in-out hover:border-[rgba(255,255,255,0.5)] hover:bg-[rgba(255,255,255,0.08)] focus:outline-none active:scale-95 active:bg-[rgba(255,255,255,0.12)]";
+
   return (
     <>
       {/* Google Button */}
-      <button className="social-button">
+      <button className={buttonStyle}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="20"
@@ -34,12 +36,13 @@ const SocialButtons: React.FC = () => {
       </button>
 
       {/* Discord Button */}
-      <button className="social-button">
+      <button className={buttonStyle}>
         <img
-          src="/logos/discord.png" // <-- absolute path from public folder
+          src="/logos/discord.png"
           alt="Discord"
           width={25}
           height={25}
+          className="flex-shrink-0"
         />
         Continue with Discord
       </button>

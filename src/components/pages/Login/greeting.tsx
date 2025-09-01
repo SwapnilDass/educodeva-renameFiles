@@ -1,22 +1,27 @@
 import React from "react";
-import "../../../styles/Login-styles/greeting.css";
 
 interface GreetingProps {
   title?: string;
 }
 
-const Greeting: React.FC<GreetingProps> = ({ 
-  title = "Hey! Glad to see you again."
+const Greeting: React.FC<GreetingProps> = ({
+  title = "Hey! Glad to see you again.",
 }) => {
   return (
-    <div className="greeting-container">
+    <div className="flex max-w-[90%] flex-col items-center text-center">
       {/* Main greeting */}
-      <h1 className="greeting-main">{title}</h1>
+      <h1 className="mb-3 font-sans text-[22px] font-extrabold leading-[28px] text-white">
+        {title}
+      </h1>
 
       {/* Sub greeting split into two lines */}
-      <div className="greeting-sub">
-        <p>👋 Welcome back! Log In or Sign Up to</p>
-        <p>your account below.</p>
+      <div className="flex min-h-[65px] w-full flex-col items-center justify-center gap-1">
+        <p className="m-0 font-sans text-[16px] font-normal leading-[22px] text-white/80">
+          👋 Welcome back! Log In or Sign Up to
+        </p>
+        <p className="m-0 font-sans text-[16px] font-normal leading-[22px] text-white/80">
+          your account below.
+        </p>
       </div>
     </div>
   );

@@ -1,18 +1,26 @@
 import React from "react";
-import "../../../styles/Login-styles/footer.css"; // Adjust the path based on your folder structure
 
 const Footer: React.FC = () => {
   return (
-    <div className="footer-container">
-      <p className="footer-text">By continuing, you agree to our</p>
-      <div className="footer-links">
-        <a href="/terms" className="footer-link">
+    <div className="mt-8 flex flex-col items-center gap-2 text-center text-sm text-white">
+      <p className="mb-2">By continuing, you agree to our</p>
+      <div className="flex justify-center gap-8">
+        <a
+          href="/terms"
+          className="relative transition-transform duration-200 ease-out hover:scale-105 hover:text-gray-300 active:scale-95"
+        >
           terms of service
         </a>
-        <a href="/privacy" className="footer-link">
+        <a
+          href="/privacy"
+          className="relative transition-transform duration-200 ease-out hover:scale-105 hover:text-gray-300 active:scale-95"
+        >
           privacy policy
         </a>
-        <a href="/content" className="footer-link">
+        <a
+          href="/content"
+          className="relative transition-transform duration-200 ease-out hover:scale-105 hover:text-gray-300 active:scale-95"
+        >
           content policy
         </a>
       </div>

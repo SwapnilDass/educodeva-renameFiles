@@ -1,33 +1,20 @@
-import { ArrowRightIcon } from "@radix-ui/react-icons";
-
-("use client");
-
-import { cn } from "@/lib/utils";
-import CurvyBoxPattern, { DotPattern } from "@/components/ui/dot-pattern"; // Changed import
-import { BorderBeam } from "@/components/ui/border-beam";
-import ShimmerButton from "@/components/ui/shimmer-button";
-import NumberTicker from "@/components/ui/number-ticker";
-import ShinyButton from "@/components/ui/shiny-button";
 import BlurFade from "@/components/ui/blur-fade";
+import { BorderBeam } from "@/components/ui/border-beam";
+import { DotPattern } from "@/components/ui/dot-pattern";
 import Navbar from "@/components/ui/Navbar";
-import Partners from "../partners/Partners";
+import ShinyButton from "@/components/ui/shiny-button";
+import { cn } from "@/lib/utils";
 
-export default function Header() {
+export default function Hero() {
   return (
-    <section
-      className="relative flex h-fit min-h-screen max-[450px]:min-h-[100vh]
-      rounded-xl overflow-hidden flex-col items-center justify-center gap-y-16
-      pb-28 pt-8
-      [background:radial-gradient(circle_at_50%_10%,rgba(0,0,0,0.35)_0%,rgba(0,0,0,0.73)_50%,rgba(81,21,140,1)_100%)]
-      max-[400px]:gap-y-16 sm:pb-32 md:gap-y-24 md:shadow-xl lg:pb-36"
-    >
+    <section className="relative flex h-fit min-h-screen flex-col items-center justify-center gap-y-16 overflow-hidden rounded-xl pb-28 pt-8 [background:radial-gradient(circle_at_50%_10%,rgba(0,0,0,0.35)_0%,rgba(0,0,0,0.73)_50%,rgba(81,21,140,1)_100%)] max-[450px]:min-h-[100vh] max-[400px]:gap-y-16 sm:pb-32 md:gap-y-24 md:shadow-xl lg:pb-36">
       {/* Navbar moved slightly higher */}
-      <div className="max-md:-translate-y-14 w-full flex justify-center">
+      <div className="flex w-full justify-center max-md:-translate-y-14">
         <Navbar />
       </div>
 
       {/* Main content */}
-      <div className="flex flex-col items-center justify-center gap-y-6 text-center -mt-2">
+      <div className="-mt-2 flex flex-col items-center justify-center gap-y-6 text-center">
         <BlurFade delay={0.5} inView>
           <h1
             className="text-center text-3xl font-medium max-[400px]:text-[7.5vw] max-[400px]:leading-[9vw] min-[500px]:text-4xl min-[650px]:text-5xl lg:text-6xl xl:text-7xl"
@@ -71,8 +58,7 @@ export default function Header() {
             <span
               className="rounded-full"
               onClick={() => {
-                window.location.href =
-                  "https://www.instagram.com/codeva.cs/";
+                window.location.href = "https://www.instagram.com/codeva.cs/";
               }}
             >
               <ShinyButton className="group rounded-full border border-solid border-[rgba(255,255,255,.3)] bg-black px-6 py-2 text-sm max-[400px]:text-xs lg:text-base min-[1350px]:px-8 min-[1350px]:py-4">
@@ -109,19 +95,19 @@ export default function Header() {
       </div>
 
       <DotPattern
-      className={cn(
-        // First mask: radial (center bright → edges transparent)
-        "[mask-image:radial-gradient(65rem_circle_at_center,white,rgba(0,0,0,0)_10%)]",
+        className={cn(
+          // First mask: radial (center bright → edges transparent)
+          "[mask-image:radial-gradient(65rem_circle_at_center,white,rgba(0,0,0,0)_10%)]",
 
-        // Second mask: horizontal fade (sides transparent)
-        "[mask-image:linear-gradient(to_right,transparent,white_50%,white_50%,transparent)]",
+          // Second mask: horizontal fade (sides transparent)
+          "[mask-image:linear-gradient(to_right,transparent,white_50%,white_50%,transparent)]",
 
-        // Combine the two masks together
-        "[mask-composite:intersect] [mask-repeat:no-repeat] [mask-position:center]",
+          // Combine the two masks together
+          "[mask-composite:intersect] [mask-position:center] [mask-repeat:no-repeat]",
 
-        "z-0"
-      )}
-    />
+          "z-0",
+        )}
+      />
     </section>
   );
 }
