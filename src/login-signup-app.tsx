@@ -3,8 +3,8 @@ import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 
 import Landing from "./components/pages/landing/landing.tsx";
-import Login from "./components/pages/Login/login";
-import Signup from "./components/pages/Signup/signup";
+import Login from "./components/pages/landing/login/login.tsx";
+import Signup from "./components/pages/landing/signup/signuppage.tsx";
 
 const PageWrapper = ({ children }: { children: React.ReactNode }) => (
   <motion.div
